@@ -1,7 +1,7 @@
 {
   "version": 4,
   "status": "ok",
-  "generated_at": "2026-11-04T23:52:18.478388+00:00",
+  "generated_at": "2026-11-04T23:55:28.308547+00:00",
   "price_as_of": "2026-11-04",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -209,9 +209,9 @@
         "count": 12,
         "lexicon_balance": 1,
         "headlines": [
-          "V Stock Quote Price and Forecast - CNN",
           "Graphano Energy Ltd. (GEL.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat"
+          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat",
+          "enCore Energy Corp. (EU.V) stock price, news, quote and history - Yahoo Finance UK"
         ]
       },
       "institutional": {
