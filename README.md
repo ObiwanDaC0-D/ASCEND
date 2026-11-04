@@ -1,22 +1,21 @@
-# ASCEND — The Five v2.0
+# ASCEND — The Five v3.0
 
-Minimal GitHub Pages interface with a scheduled, experimental market research pipeline.
+Minimal one-button GitHub Pages research interface, with scheduled Python scanning.
 
-## Start
+## Activation
 1. **Settings → Pages → Deploy from a branch → main / (root)**.
-2. **Actions → ASCEND daily market scan → Run workflow**.
-3. Open the published page and press **LAUNCH ASCEND** to read the latest published scan.
+2. **Actions → ASCEND daily market scan → Run workflow** to produce a V3 scan.
+3. Open the published page and press **LAUNCH ASCEND**.
 
-## What's new in V2
-- Expanded watch universe (38 liquid U.S.-listed stocks, not the entire market).
-- Historical 5-session forward-return diagnostics computed using only past data for features.
-- A minimum of 12 qualifying historical observations per candidate.
-- Recent Google News RSS headlines collected as **context only**, never fed into trading scores.
-- Improved candidate details, last-update timestamp and staleness warning.
-- Fail-closed results when data is missing or fewer than five qualify.
+## V3 additions
+- Time-ordered historical holdout: last 120 eligible sessions, earlier sessions as training period.
+- SPY-relative 5-session forward returns and positive-outcome frequency.
+- Benchmark-aware diagnostics shown in expandable research details.
+- Fail-closed version check, preventing old V2 data from masquerading as V3 results.
+- Explicit alternative-data research gate: unconventional correlations remain excluded from rankings until independently validated.
+- Existing contextual news headlines, liquidity and momentum filters retained.
 
-## Scientific caveats
-The scoring formula remains an **unvalidated momentum heuristic**. Historical observations overlap, and the exploratory positive-return fraction is **not a calibrated prediction**. No cross-sectional benchmark, risk-adjusted expected-return forecast, formal multiple-testing correction, real-time feed, broker integration, or institutional/quantum correlation engine is implemented yet. News RSS may be blocked or incomplete. Yahoo Finance via yfinance is not a guaranteed or licensed production market-data service. Results may lag market hours or fail entirely. No trades are placed.
+## Important limits
+This is **not** a predictive intelligence model with demonstrated edge. The ranking is still a simple momentum heuristic; historical results are overlapping and subject to dependence and selection bias. The holdout is descriptive and **not used for optimizing the score**, but the universe and strategy design are not pre-registered. No SEC ownership ingestion, weather/quantum data feed, real-time job trigger, calibrated confidence, portfolio risk sizing, or broker execution is implemented. News remains context only. Market data from yfinance may fail or be delayed.
 
-## Next milestones
-Point-in-time event archives, genuine walk-forward strategy-vs-benchmark evaluation, confidence intervals, institutional filings, controlled alternative-data experiments, and an authenticated job-trigger endpoint (the current button loads the latest scheduled result).
+GitHub Actions runs on weekdays at 22:30 UTC, subject to delays. The Launch button reads the last published JSON rather than starting a remote job.
