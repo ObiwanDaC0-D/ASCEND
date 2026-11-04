@@ -1,0 +1,8 @@
+{
+  "status": "unavailable",
+  "generated_at": null,
+  "price_as_of": null,
+  "method": "Awaiting first scheduled scan",
+  "picks": [],
+  "message": "Run the ASCEND daily market scan workflow to generate results."
+}
