@@ -27,8 +27,25 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json
-          if ! git diff --cached --quiet; then
+          # Preserve this run's generated snapshot before updating our checkout.
+          cp data/latest.json /tmp/ascend-latest.json
+          # Only publish the generated data file; never force-push or rewrite other work.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/ascend-latest.json data/latest.json
+            git add data/latest.json
+            if git diff --cached --quiet; then
+              echo "Snapshot already published."
+              exit 0
+            fi
             git commit -m "Update ASCEND market scan"
-            git push
-          fi
+            if git push origin HEAD:main; then
+              echo "Snapshot published successfully."
+              exit 0
+            fi
+            echo "Remote advanced during publish (attempt $attempt); retrying."
+            sleep $((attempt * 2))
+          done
+          echo "::error::Unable to publish snapshot after 5 attempts."
+          exit 1
