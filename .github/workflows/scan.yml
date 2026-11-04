@@ -17,7 +17,12 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
-      - run: python scanner.py
+      - name: Run research unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Run ASCEND scanner
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python scanner.py
       - name: Commit research snapshot
         run: |
           git config user.name "github-actions[bot]"
