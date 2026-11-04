@@ -1,8 +1,279 @@
 {
-  "status": "unavailable",
-  "generated_at": null,
-  "price_as_of": null,
-  "method": "Awaiting first scheduled scan",
-  "picks": [],
-  "message": "Run the ASCEND daily market scan workflow to generate results."
+  "version": 4,
+  "status": "ok",
+  "generated_at": "2026-11-04T23:51:06.912322+00:00",
+  "price_as_of": "2026-11-04",
+  "universe_size": 40,
+  "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
+  "picks": [
+    {
+      "ticker": "HD",
+      "price": 355.44,
+      "momentum_5d_pct": 11.93,
+      "trend_20d_pct": 24.38,
+      "volatility_20d_pct": 38.26,
+      "liquidity_usd": 1524293253,
+      "validation": {
+        "training": {
+          "signals": 230,
+          "positive_fraction": 0.526,
+          "average_return_pct": 0.06,
+          "average_excess_vs_spy_pct": -0.39
+        },
+        "holdout": {
+          "signals": 35,
+          "positive_fraction": 0.571,
+          "average_return_pct": 0.61,
+          "average_excess_vs_spy_pct": 0.61
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-04",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 1,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": -2,
+        "headlines": [
+          "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - Yahoo Finance",
+          "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - The Motley Fool",
+          "Home Depot Inc Stock (HD) Moved Up by 3.32% on Nov 4: What Investors Need To Know - TradingKey"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 12,
+        "latest_filed": "2026-09-22",
+        "cik": "0000354950",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "MA",
+      "price": 672.68,
+      "momentum_5d_pct": 10.22,
+      "trend_20d_pct": 18.18,
+      "volatility_20d_pct": 27.27,
+      "liquidity_usd": 2154463349,
+      "validation": {
+        "training": {
+          "signals": 244,
+          "positive_fraction": 0.537,
+          "average_return_pct": -0.03,
+          "average_excess_vs_spy_pct": -0.49
+        },
+        "holdout": {
+          "signals": 48,
+          "positive_fraction": 0.625,
+          "average_return_pct": 1.16,
+          "average_excess_vs_spy_pct": 0.78
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-04",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 2,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 0,
+        "headlines": [
+          "Mastercard Incorporated (MA) Is Riding the Global Shift Toward Digital Payments: Here\u2019s Why It Matters - Yahoo Finance",
+          "Is Mastercard Stock Paying You Enough For The Swings? - Trefis",
+          "Mastercard Inc Stock (MA) Moved Up by 3.47% on Nov 4: What Signal Does It Send? - TradingKey"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 14,
+        "latest_filed": "2026-11-03",
+        "cik": "0001141391",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "LLY",
+      "price": 1417.99,
+      "momentum_5d_pct": 10.07,
+      "trend_20d_pct": 19.29,
+      "volatility_20d_pct": 36.27,
+      "liquidity_usd": 3549328113,
+      "validation": {
+        "training": {
+          "signals": 241,
+          "positive_fraction": 0.593,
+          "average_return_pct": 0.36,
+          "average_excess_vs_spy_pct": 0.04
+        },
+        "holdout": {
+          "signals": 62,
+          "positive_fraction": 0.581,
+          "average_return_pct": 1.26,
+          "average_excess_vs_spy_pct": 0.95
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-04",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 3,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 2,
+        "headlines": [
+          "42 ETFs Add to Lilly (LLY) Holdings on Nov. 2 - Yahoo Finance",
+          "The One Thing To Settle Before Buying Eli Lilly Stock - Trefis",
+          "Eli Lilly: The True Frontier Of Real-World AI Monetization (NYSE:LLY) - Seeking Alpha"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 26,
+        "latest_filed": "2026-11-04",
+        "cik": "0000059478",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "WMT",
+      "price": 129.17,
+      "momentum_5d_pct": 8.76,
+      "trend_20d_pct": 19.42,
+      "volatility_20d_pct": 26.59,
+      "liquidity_usd": 2506684511,
+      "validation": {
+        "training": {
+          "signals": 298,
+          "positive_fraction": 0.594,
+          "average_return_pct": 0.57,
+          "average_excess_vs_spy_pct": 0.01
+        },
+        "holdout": {
+          "signals": 34,
+          "positive_fraction": 0.529,
+          "average_return_pct": -0.88,
+          "average_excess_vs_spy_pct": -0.73
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-04",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 4,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 1,
+        "headlines": [
+          "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - Yahoo Finance",
+          "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - The Motley Fool",
+          "Stocks rally as Democrats' midterm election sweep removes Wall Street's political uncertainty - Quartz"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 32,
+        "latest_filed": "2026-11-03",
+        "cik": "0000104169",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "V",
+      "price": 436.57,
+      "momentum_5d_pct": 8.98,
+      "trend_20d_pct": 17.33,
+      "volatility_20d_pct": 24.1,
+      "liquidity_usd": 2755693895,
+      "validation": {
+        "training": {
+          "signals": 233,
+          "positive_fraction": 0.549,
+          "average_return_pct": -0.04,
+          "average_excess_vs_spy_pct": -0.53
+        },
+        "holdout": {
+          "signals": 64,
+          "positive_fraction": 0.547,
+          "average_return_pct": 0.96,
+          "average_excess_vs_spy_pct": 0.45
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-04",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 5,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 1,
+        "headlines": [
+          "V Stock Quote Price and Forecast - CNN",
+          "Graphano Energy Ltd. (GEL.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 11,
+        "latest_filed": "2026-11-03",
+        "cik": "0001403161",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    }
+  ],
+  "message": "Five experimental screening candidates; predictive advantage not established.",
+  "alternative_lab": {
+    "status": "exploratory_only",
+    "target": "NVDA daily returns",
+    "predictor": "San Diego daily mean temperature",
+    "observations": 248,
+    "lag_days": 1,
+    "correlation": -0.0223,
+    "max_lag_permutation_p": 0.9441,
+    "permutations": 500,
+    "warning": "Illustrative exploratory test; no independent holdout, seasonality controls, or causal evidence. Not quantum entanglement and not used in rankings."
+  },
+  "warnings": [
+    "Experimental heuristic, not a calibrated return forecast.",
+    "Overlapping outcomes and selection effects limit inference.",
+    "News and alternative signals do not influence rankings."
+  ],
+  "institutional": {
+    "status": "context_only",
+    "source": "SEC EDGAR submissions",
+    "companies": {
+      "HD": {
+        "form4_count_90d": 12,
+        "latest_filed": "2026-09-22",
+        "cik": "0000354950",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "MA": {
+        "form4_count_90d": 14,
+        "latest_filed": "2026-11-03",
+        "cik": "0001141391",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "LLY": {
+        "form4_count_90d": 26,
+        "latest_filed": "2026-11-04",
+        "cik": "0000059478",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "WMT": {
+        "form4_count_90d": 32,
+        "latest_filed": "2026-11-03",
+        "cik": "0000104169",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "V": {
+        "form4_count_90d": 11,
+        "latest_filed": "2026-11-03",
+        "cik": "0001403161",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    "message": "Public disclosure filing counts; never included in ranking."
+  }
 }
