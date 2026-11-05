@@ -1,7 +1,7 @@
 {
-  "version": 9,
+  "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-05T00:18:41.722944+00:00",
+  "generated_at": "2026-11-05T00:21:11.131327+00:00",
   "price_as_of": "2026-11-04",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -35,7 +35,7 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": -2,
+        "lexicon_balance": -3,
         "headlines": [
           "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - Yahoo Finance",
           "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - The Motley Fool",
@@ -164,7 +164,7 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
+        "lexicon_balance": 0,
         "headlines": [
           "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - Yahoo Finance",
           "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - The Motley Fool",
@@ -209,9 +209,9 @@
         "count": 12,
         "lexicon_balance": 1,
         "headlines": [
-          "V Stock Quote Price and Forecast - CNN",
           "Graphano Energy Ltd. (GEL.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat"
+          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat",
+          "enCore Energy Corp. (EU.V) stock price, news, quote and history - Yahoo Finance UK"
         ]
       },
       "institutional": {
@@ -348,5 +348,9 @@
       "note": "Each path independently tracks a five-stock equal-weight cohort; overlaps are not consolidated into a cash-constrained account. Next-session close is hypothetical. Cost is applied to each liquidation mark."
     },
     "method": "Signals recorded after closing data; next common session adjusted close is hypothetical entry; 2/5 subsequent sessions, 10 bps illustrative round-trip cost; no execution."
+  },
+  "data_quality": {
+    "status": "passed",
+    "reason": "five distinct tickers, one coherent price session, positive ordered price history"
   }
 }
