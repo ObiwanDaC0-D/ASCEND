@@ -1,4 +1,4 @@
-/* ASCEND V9 performance display: additive and read-only. */
+/* ASCEND V10 performance display: additive and read-only. */
 (function(){
   const button=document.getElementById('launch');
   if(!button)return;
@@ -12,7 +12,7 @@
       const response=await fetch('./data/latest.json?lab='+Date.now(),{cache:'no-store'});
       if(!response.ok)return;
       const d=await response.json();
-      if(d.version!==9)return;
+      if(d.version!==10)return;
       const p=d.performance;
       if(!p||p.status!=='tracking')return;
       const details=document.createElement('details');
