@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "signal_date": "2026-11-04",
+      "captured_at": "2026-11-05T00:06:18.849893+00:00",
+      "picks": [
+        {
+          "ticker": "HD",
+          "rank": 1,
+          "outcomes": {}
+        },
+        {
+          "ticker": "MA",
+          "rank": 2,
+          "outcomes": {}
+        },
+        {
+          "ticker": "LLY",
+          "rank": 3,
+          "outcomes": {}
+        },
+        {
+          "ticker": "WMT",
+          "rank": 4,
+          "outcomes": {}
+        },
+        {
+          "ticker": "V",
+          "rank": 5,
+          "outcomes": {}
+        }
+      ]
+    }
+  ],
+  "updated_at": "2026-11-05T00:06:18.849908+00:00",
+  "method": "Signals recorded after closing data; next common session adjusted close is hypothetical entry; 2/5 subsequent sessions, 10 bps illustrative round-trip cost; no execution.",
+  "summary": {
+    "2": {
+      "observations": 0,
+      "average_net_pct": null,
+      "average_excess_vs_spy_pct": null,
+      "positive_fraction": null
+    },
+    "5": {
+      "observations": 0,
+      "average_net_pct": null,
+      "average_excess_vs_spy_pct": null,
+      "positive_fraction": null
+    }
+  },
+  "cohorts": {
+    "2": {
+      "completed_cohorts": 0,
+      "average_basket_net_pct": null,
+      "average_basket_excess_pct": null,
+      "positive_cohort_fraction": null,
+      "uncertainty_95_pct": null,
+      "cohorts": [],
+      "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
+    },
+    "5": {
+      "completed_cohorts": 0,
+      "average_basket_net_pct": null,
+      "average_basket_excess_pct": null,
+      "positive_cohort_fraction": null,
+      "uncertainty_95_pct": null,
+      "cohorts": [],
+      "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
+    }
+  }
+}

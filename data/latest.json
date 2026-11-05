@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 6,
   "status": "ok",
-  "generated_at": "2026-11-04T23:55:28.308547+00:00",
+  "generated_at": "2026-11-05T00:06:00.825151+00:00",
   "price_as_of": "2026-11-04",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -86,7 +86,7 @@
         ]
       },
       "institutional": {
-        "form4_count_90d": 14,
+        "form4_count_90d": 12,
         "latest_filed": "2026-11-03",
         "cik": "0001141391",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
@@ -250,7 +250,7 @@
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "MA": {
-        "form4_count_90d": 14,
+        "form4_count_90d": 12,
         "latest_filed": "2026-11-03",
         "cik": "0001141391",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
@@ -275,5 +275,44 @@
       }
     },
     "message": "Public disclosure filing counts; never included in ranking."
+  },
+  "performance": {
+    "status": "tracking",
+    "signal_days": 1,
+    "summary": {
+      "2": {
+        "observations": 0,
+        "average_net_pct": null,
+        "average_excess_vs_spy_pct": null,
+        "positive_fraction": null
+      },
+      "5": {
+        "observations": 0,
+        "average_net_pct": null,
+        "average_excess_vs_spy_pct": null,
+        "positive_fraction": null
+      }
+    },
+    "cohorts": {
+      "2": {
+        "completed_cohorts": 0,
+        "average_basket_net_pct": null,
+        "average_basket_excess_pct": null,
+        "positive_cohort_fraction": null,
+        "uncertainty_95_pct": null,
+        "cohorts": [],
+        "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
+      },
+      "5": {
+        "completed_cohorts": 0,
+        "average_basket_net_pct": null,
+        "average_basket_excess_pct": null,
+        "positive_cohort_fraction": null,
+        "uncertainty_95_pct": null,
+        "cohorts": [],
+        "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
+      }
+    },
+    "method": "Signals recorded after closing data; next common session adjusted close is hypothetical entry; 2/5 subsequent sessions, 10 bps illustrative round-trip cost; no execution."
   }
 }
