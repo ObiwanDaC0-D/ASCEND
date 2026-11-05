@@ -109,6 +109,7 @@ def main():
     except Exception as exc:
         out["performance"]={"status":"unavailable","reason":type(exc).__name__}
         print("journal unavailable:",type(exc).__name__,str(exc)[:100])
+    out["data_quality"]={"status":"passed" if out["status"]=="ok" else "not_verified","reason":"five distinct tickers, one coherent price session, positive ordered price history" if out["status"]=="ok" else out["message"]}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps(out,indent=2,allow_nan=False)+"\n",encoding="utf-8")
     print(out["status"],out["message"])
