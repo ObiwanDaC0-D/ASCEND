@@ -1,6 +1,5 @@
-/* ASCEND V7 performance display: additive and read-only. */
+/* ASCEND V8 performance display: additive and read-only. */
 (function(){
-  const original=HTMLButtonElement.prototype;
   const button=document.getElementById('launch');
   if(!button)return;
   const panel=document.createElement('section');
@@ -13,7 +12,7 @@
       const response=await fetch('./data/latest.json?lab='+Date.now(),{cache:'no-store'});
       if(!response.ok)return;
       const d=await response.json();
-      if(d.version!==7)return;
+      if(d.version!==8)return;
       const p=d.performance;
       if(!p||p.status!=='tracking')return;
       const details=document.createElement('details');
@@ -29,6 +28,15 @@
         paragraph(h+'-session horizon · '+c.completed_cohorts+' complete five-stock baskets · mean net '+value(c.average_basket_net_pct)+' · mean excess vs SPY '+value(c.average_basket_excess_pct));
         if(c.uncertainty_95_pct)paragraph('Exploratory 95% block-bootstrap range: '+c.uncertainty_95_pct.map(value).join(' to ')+'. Overlapping dates can remain dependent.');
         else paragraph('Uncertainty range appears after 20 complete baskets.');
+        const risk=p.risk?.[h];
+        if(risk&&risk.completed_cohorts){
+          paragraph('Downside: '+(risk.negative_fraction*100).toFixed(1)+'% of completed baskets were negative; worst basket '+risk.worst_net_pct+'% (10 bps friction).');
+          paragraph('Trading-cost sensitivity (illustrative, not fills): '+(risk.cost_sensitivity||[]).map(x=>x.round_trip_bps+' bps → '+x.mean_basket_net_pct+'% mean net').join(' · '));
+          const seq=risk.sequential_illustration;
+          if(seq&&seq.cohorts){
+            paragraph('Non-overlapping sequential illustration: '+seq.cohorts+' baskets; compounded '+seq.total_return_pct+'%, maximum observed drawdown '+seq.max_drawdown_pct+'%, matched SPY '+seq.spy_total_return_pct+'%. This is NOT a deployable portfolio.');
+          }
+        }
         const recent=c.cohorts||[];
         if(recent.length){
           const table=document.createElement('table');
