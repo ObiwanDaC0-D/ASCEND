@@ -1,4 +1,4 @@
-/* ASCEND V8 performance display: additive and read-only. */
+/* ASCEND V9 performance display: additive and read-only. */
 (function(){
   const button=document.getElementById('launch');
   if(!button)return;
@@ -12,7 +12,7 @@
       const response=await fetch('./data/latest.json?lab='+Date.now(),{cache:'no-store'});
       if(!response.ok)return;
       const d=await response.json();
-      if(d.version!==8)return;
+      if(d.version!==9)return;
       const p=d.performance;
       if(!p||p.status!=='tracking')return;
       const details=document.createElement('details');
@@ -50,6 +50,14 @@
             table.append(tr)
           }
           details.append(table)
+        }
+      }
+      const audit=p.daily_marks;
+      if(audit?.status==='descriptive'){
+        paragraph('Daily paper marks: '+audit.cohorts_with_marks+' cohorts with observable next-session prices. Each cohort is tracked separately; overlapping cohorts are not a single account.');
+        for(const path of (audit.recent_paths||[]).slice(-3).reverse()){
+          const last=path.marks?.at(-1);
+          if(last)paragraph(path.signal_date+' · '+path.strategy_id+' · latest mark '+last.date+': basket '+last.basket_net_pct+'%, excess vs SPY '+last.excess_pct+'%'+(path.complete?' · 5-session observation complete':' · still maturing'));
         }
       }
       paragraph('Research averages are not a compounded, capital-constrained portfolio. Costs assume 10 basis points round trip. No established forecasting advantage.');
