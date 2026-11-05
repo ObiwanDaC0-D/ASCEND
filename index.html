@@ -1,1 +1,65 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ASCEND — The Five</title><style>:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#080e1d;color:#ecf2ff}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0,#24365b,#080e1d 68%);display:grid;place-items:center}main{width:min(680px,94vw);padding:28px 10px 48px}header,.between{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:1.35rem;letter-spacing:.16em}small,.muted{color:#a5b4d0}section{text-align:center;margin:45px 0 30px}.orb{width:118px;height:118px;border-radius:50%;margin:auto;background:radial-gradient(circle at 35% 30%,#a6f4e6,#5e73da 40%,#18254c 75%);box-shadow:0 0 65px #5266c888;animation:pulse 5s ease-in-out infinite}@keyframes pulse{50%{transform:scale(1.07)}}h2{font-size:2rem;margin-bottom:4px}button{width:100%;background:#b6caff;border:0;border-radius:14px;padding:17px;color:#10192f;font-size:1rem;font-weight:800;cursor:pointer;margin-top:22px}button:disabled{opacity:.55;cursor:wait}#status{min-height:42px;margin-top:17px;font-size:.88rem;color:#b7c5df}article{background:#15233d;border:1px solid #304569;border-radius:16px;margin:12px 0;padding:18px}article strong{font-size:1.25rem}.tag{color:#9ce5d1}article p{color:#c1cee4;font-size:.9rem;line-height:1.55;margin:8px 0}details{margin-top:8px;color:#aebfdf;font-size:.83rem}summary{cursor:pointer}ul{padding-left:20px}li{margin:6px 0}footer{color:#94a5c4;font-size:.77rem;line-height:1.6;margin-top:24px}.warning{color:#f1c99b}</style></head><body><main><header><h1>✦ ASCEND</h1><small>V10.0 · THE FIVE</small></header><section><div class="orb" aria-hidden="true"></div><h2>Discover the Opportunity</h2><p class="muted">Evidence first. Risk always.</p><button id="launch">LAUNCH ASCEND</button><p id="status" role="status">Ready to retrieve the latest completed analysis.</p></section><div id="results" aria-live="polite"></div><footer>Experimental research, not individualized financial advice. Launch retrieves the most recent scheduled scan, not an on-demand computation. Prices are last daily closes, not live. Historical outcomes are not forecasts. No trades are placed.</footer></main><script>const b=document.getElementById('launch'),status=document.getElementById('status'),results=document.getElementById('results');function node(t,v,cls){const e=document.createElement(t);if(cls)e.className=cls;e.textContent=v;return e}b.onclick=async()=>{b.disabled=true;status.textContent='Loading latest research…';results.replaceChildren();try{const r=await fetch('./data/latest.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Published scan missing');const d=await r.json();if(d.version!==10){status.textContent='Version 10 scan pending. Run the GitHub Actions workflow to generate new results.';return}if(d.status!=='ok'||!Array.isArray(d.picks)||!d.picks.length){status.textContent=d.message||'No qualified candidates';return}const generated=new Date(d.generated_at);status.textContent='Research generated '+generated.toLocaleString()+' · last price session '+d.price_as_of;if(Date.now()-generated.getTime()>72*3600*1000)results.append(node('p','Warning: this scan is more than 72 hours old.','warning'));for(const p of d.picks.slice(0,5)){const a=node('article','');const top=node('div','','between');top.append(node('strong',p.ticker),node('span','#'+p.rank+' · Research candidate','tag'));a.append(top,node('p','Last close $'+Number(p.price).toFixed(2)+' · 5-day momentum '+Number(p.momentum_5d_pct).toFixed(2)+'% · Annualized volatility '+Number(p.volatility_20d_pct).toFixed(1)+'%'),node('p',p.rationale));const q=p.validation?.holdout;if(q)a.append(node('p','Historical holdout: '+q.signals+' qualifying signals · '+(q.positive_fraction*100).toFixed(1)+'% positive 5-session outcomes · average excess vs SPY '+q.average_excess_vs_spy_pct+'%. Descriptive, not a probability forecast.'));const detail=node('details','');detail.append(node('summary','Research details'));detail.append(node('p','20-day trend: '+p.trend_20d_pct+'% · Average dollar volume: $'+Number(p.liquidity_usd).toLocaleString()));if(p.validation?.training)detail.append(node('p','Earlier training period: '+p.validation.training.signals+' qualifying signals; average excess vs SPY '+p.validation.training.average_excess_vs_spy_pct+'%.'));if(p.news){detail.append(node('p','News: '+p.news.status+' · '+p.news.count+' headlines (context only)'));const list=node('ul','');for(const h of p.news.headlines||[])list.append(node('li',h));detail.append(list)}if(p.institutional?.form4_count_90d!==undefined)detail.append(node('p','SEC Form 4 filings in last 90 days: '+p.institutional.form4_count_90d+' (filing counts, not purchases).'));a.append(detail);results.append(a)}if(d.performance){const perf=node('details','');perf.append(node('summary','Performance laboratory · paper research'));perf.append(node('p','Recorded signal days: '+(d.performance.signal_days??0)+'. Hypothetical next-session closing entries; not actual fills.'));for(const horizon of ['2','5']){const q=d.performance.summary?.[horizon];if(q)perf.append(node('p',horizon+'-session follow-up: '+q.observations+' matured selections'+(q.average_net_pct===null?' (awaiting future prices).':'; mean net '+q.average_net_pct+'%, mean excess vs SPY '+q.average_excess_vs_spy_pct+'%.')))}perf.append(node('p','Includes illustrative 0.10% round-trip trading friction. Small samples and overlapping picks are not independent evidence of edge.'));results.append(perf)}if(d.alternative_lab){const lab=node('details','');lab.append(node('summary','Serendipity research journal'));const z=d.alternative_lab;lab.append(node('p',z.status==='exploratory_only'?'NVDA vs San Diego temperature: lag '+z.lag_days+' days, exploratory correlation '+z.correlation+', max-lag permutation p '+z.max_lag_permutation_p+'. Not used in ranking.':z.message||z.warning||'Experiment unavailable.'));results.append(lab)}}catch(e){status.textContent='Unable to load analysis: '+e.message}finally{b.disabled=false}};</script><script src="./performance_view.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090f1e">
+<title>ASCEND — The Five</title>
+<style>
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,sans-serif;background:#090f1e;color:#edf2ff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse 80% 40% at 50% -10%,#25385e 0%,#090f1e 75%);line-height:1.5}
+main{width:min(620px,calc(100% - 36px));margin:0 auto;padding:25px 0 54px}
+header{display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:1.16rem;font-weight:800;letter-spacing:.19em}
+.version{font-size:.73rem;color:#91a4c6;letter-spacing:.12em}
+.hero{text-align:center;padding:70px 0 38px}
+.orb{width:94px;height:94px;margin:0 auto 29px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#c4f6ee,#7796ed 38%,#343d88 65%,#141e3d 87%);box-shadow:0 0 48px #587bd45a}
+h1{font-size:clamp(1.7rem,5vw,2.3rem);font-weight:650;letter-spacing:-.04em;margin:0}
+.subtitle{color:#aab8d0;margin:8px 0 0;font-size:.93rem}
+button{width:100%;max-width:410px;min-height:54px;border:0;border-radius:13px;background:#c4d3ff;color:#111b36;font-size:.95rem;font-weight:800;letter-spacing:.08em;margin-top:29px;cursor:pointer;transition:background .15s,transform .15s}
+button:hover{background:#dce5ff;transform:translateY(-1px)}
+button:focus-visible,summary:focus-visible{outline:2px solid #a8e8dc;outline-offset:3px}
+button:disabled{opacity:.6;cursor:wait;transform:none}
+#status{color:#99aac9;font-size:.8rem;margin:16px auto 0;max-width:450px;min-height:2.4em}
+.results-title{font-size:1.05rem;font-weight:650;letter-spacing:.06em;margin:0 0 16px}
+.pick{border:1px solid #283a57;background:#131e32;border-radius:15px;padding:17px 19px;margin:10px 0}
+.pick-head{display:flex;align-items:center;gap:14px}
+.rank{font-size:.76rem;color:#8b9ebd;letter-spacing:.08em}
+.ticker{font-size:1.24rem;letter-spacing:.015em}
+.pick-stats{display:flex;gap:8px 20px;flex-wrap:wrap;margin:8px 0 0 32px;font-size:.84rem;color:#afc1dc}
+details{font-size:.84rem;color:#afc1dc}
+summary{cursor:pointer;list-style:none;min-height:36px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"⌄";font-size:1.12rem;color:#8ea5cb}
+details[open]>summary::after{content:"⌃"}
+.more{margin:10px 0 -7px 32px}
+.more p,.research p{margin:9px 0;color:#b4c2da;overflow-wrap:anywhere}
+.more details{margin:4px 0}
+.research{border:1px solid #283a57;background:#101a2d;border-radius:15px;padding:12px 19px;margin-top:22px}
+.research>summary{font-size:.94rem;font-weight:650;color:#e5eeff}
+.research-group{border-top:1px solid #263653;padding:9px 0}
+.research-group h3{font-size:.85rem;color:#e2ebff;margin:7px 0}
+.fine,footer{color:#8597b7!important;font-size:.74rem;line-height:1.7}
+footer{border-top:1px solid #25334d;margin-top:33px;padding-top:20px}
+.alert{font-size:.83rem;color:#f2c18d}
+@media(max-width:430px){.hero{padding-top:50px}.pick{padding:15px}.pick-stats,.more{margin-left:0}}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<header><div class="brand">✦ ASCEND</div><div class="version">RESEARCH LAB · V10</div></header>
+<section class="hero">
+<div class="orb" aria-hidden="true"></div>
+<h1>Find the signal.</h1>
+<p class="subtitle">Five research candidates. Nothing unnecessary.</p>
+<button id="launch" type="button">LAUNCH ASCEND</button>
+<p id="status" role="status" aria-live="polite">Ready to load the latest completed scan.</p>
+</section>
+<div id="results" aria-live="polite"></div>
+<footer>Experimental market research, not personalized financial advice. Selections are from a scheduled daily scan, not live prices. Historical statistics are not forecasts. No trades are placed.</footer>
+</main>
+<script src="./app.js" defer></script>
+</body>
+</html>
