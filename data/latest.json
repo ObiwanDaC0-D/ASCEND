@@ -1,7 +1,7 @@
 {
-  "version": 6,
+  "version": 9,
   "status": "ok",
-  "generated_at": "2026-11-05T00:06:00.825151+00:00",
+  "generated_at": "2026-11-05T00:18:41.722944+00:00",
   "price_as_of": "2026-11-04",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -209,9 +209,9 @@
         "count": 12,
         "lexicon_balance": 1,
         "headlines": [
+          "V Stock Quote Price and Forecast - CNN",
           "Graphano Energy Ltd. (GEL.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat",
-          "enCore Energy Corp. (EU.V) stock price, news, quote and history - Yahoo Finance UK"
+          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat"
         ]
       },
       "institutional": {
@@ -312,6 +312,40 @@
         "cohorts": [],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
       }
+    },
+    "risk": {
+      "2": {
+        "completed_cohorts": 0,
+        "negative_fraction": null,
+        "worst_net_pct": null,
+        "cost_sensitivity": [],
+        "sequential_illustration": {
+          "cohorts": 0,
+          "total_return_pct": null,
+          "max_drawdown_pct": null,
+          "spy_total_return_pct": null
+        },
+        "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
+      },
+      "5": {
+        "completed_cohorts": 0,
+        "negative_fraction": null,
+        "worst_net_pct": null,
+        "cost_sensitivity": [],
+        "sequential_illustration": {
+          "cohorts": 0,
+          "total_return_pct": null,
+          "max_drawdown_pct": null,
+          "spy_total_return_pct": null
+        },
+        "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
+      }
+    },
+    "daily_marks": {
+      "status": "descriptive",
+      "cohorts_with_marks": 0,
+      "recent_paths": [],
+      "note": "Each path independently tracks a five-stock equal-weight cohort; overlaps are not consolidated into a cash-constrained account. Next-session close is hypothetical. Cost is applied to each liquidation mark."
     },
     "method": "Signals recorded after closing data; next common session adjusted close is hypothetical entry; 2/5 subsequent sessions, 10 bps illustrative round-trip cost; no execution."
   }
