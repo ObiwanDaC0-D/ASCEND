@@ -1,4 +1,4 @@
-"""ASCEND V8 prospective, close-to-close paper research journal.
+"""ASCEND V9 prospective, close-to-close paper research journal.
 
 Signals are recorded at session close; entry is the NEXT session's adjusted close,
 not a tradeable guaranteed fill. No lookahead and no brokerage integration.
@@ -10,6 +10,7 @@ import pandas as pd
 import yfinance as yf
 from performance_lab import summarize
 from risk_lab import evaluate as evaluate_risk
+from audit_lab import record_metadata, daily_marks
 
 PATH=Path("data/performance.json")
 COST_BPS=10 # round-trip friction, illustrative, applied once at exit
@@ -59,7 +60,7 @@ def update(snapshot):
     if snapshot.get("status")=="ok" and len(snapshot.get("picks",[]))==5:
         day=snapshot["price_as_of"]
         if day and not any(r["signal_date"]==day for r in records):
-            records.append({"signal_date":day,"captured_at":datetime.now(timezone.utc).isoformat(),"picks":[{"ticker":p["ticker"],"rank":p["rank"],"outcomes":{}} for p in snapshot["picks"]]})
+            records.append({"signal_date":day,"captured_at":datetime.now(timezone.utc).isoformat(),"strategy":record_metadata(snapshot),"picks":[{"ticker":p["ticker"],"rank":p["rank"],"outcomes":{}} for p in snapshot["picks"]]})
     records.sort(key=lambda r:r["signal_date"])
     data["records"]=records
     data["updated_at"]=datetime.now(timezone.utc).isoformat()
@@ -71,6 +72,7 @@ def update(snapshot):
     data["summary"]=summary
     data["cohorts"]={str(h):summarize(records,h) for h in HORIZONS}
     data["risk"]={str(h):evaluate_risk(records,h) for h in HORIZONS}
+    data["daily_marks"]=daily_marks(records,cache,5)
     PATH.parent.mkdir(parents=True,exist_ok=True)
     PATH.write_text(json.dumps(data,indent=2,allow_nan=False)+"\n")
-    return {"status":"tracking","signal_days":len(records),"summary":summary,"cohorts":data["cohorts"],"risk":data["risk"],"method":data["method"]}
+    return {"status":"tracking","signal_days":len(records),"summary":summary,"cohorts":data["cohorts"],"risk":data["risk"],"daily_marks":{"status":data["daily_marks"]["status"],"cohorts_with_marks":data["daily_marks"].get("cohorts_with_marks",0),"recent_paths":data["daily_marks"].get("paths",[])[-5:],"note":data["daily_marks"].get("note")},"method":data["method"]}
