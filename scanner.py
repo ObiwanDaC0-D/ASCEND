@@ -112,7 +112,7 @@ def main():
         from pathlib import Path as _Path
         if not _Path("data/performance.json").exists():
             _Path("data").mkdir(exist_ok=True)
-            _Path("data/performance.json").write_text(json.dumps({"schema":1,"records":[],"status":"unavailable"},indent=2)+"\\n")
+            _Path("data/performance.json").write_text(json.dumps({"schema":1,"records":[],"status":"unavailable"},indent=2))
     out["data_quality"]={"status":"passed" if out["status"]=="ok" else "not_verified","reason":"five distinct tickers, one coherent price session, positive ordered price history" if out["status"]=="ok" else out["message"]}
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps(out,indent=2,allow_nan=False)+"\n",encoding="utf-8")
