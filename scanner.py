@@ -59,7 +59,7 @@ def diagnostics(c,bench):
     return {"training":a,"holdout":b,"holdout_sessions":120,"method":"time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"}
 def main():
     now=datetime.now(timezone.utc)
-    out={"version":6,"status":"unavailable","generated_at":now.isoformat(),"price_as_of":None,"universe_size":len(TICKERS),"method":"price momentum, liquidity, volatility; time-ordered holdout vs SPY","picks":[],"message":"No qualified opportunities.","alternative_lab":{"status":"research_only","message":"Unconventional relationships are not allowed to affect rankings without pre-registered, out-of-sample validation."},"warnings":["Experimental heuristic, not a calibrated return forecast.","Overlapping outcomes and selection effects limit inference.","News and alternative signals do not influence rankings."]}
+    out={"version":7,"status":"unavailable","generated_at":now.isoformat(),"price_as_of":None,"universe_size":len(TICKERS),"method":"price momentum, liquidity, volatility; time-ordered holdout vs SPY","picks":[],"message":"No qualified opportunities.","alternative_lab":{"status":"research_only","message":"Unconventional relationships are not allowed to affect rankings without pre-registered, out-of-sample validation."},"warnings":["Experimental heuristic, not a calibrated return forecast.","Overlapping outcomes and selection effects limit inference.","News and alternative signals do not influence rankings."]}
     try:
         spy=frame("SPY")
         if spy is None:raise RuntimeError("Benchmark data unavailable")
