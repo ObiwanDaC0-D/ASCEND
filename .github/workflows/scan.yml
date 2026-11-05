@@ -29,12 +29,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Preserve this run's generated snapshot before updating our checkout.
           cp data/latest.json /tmp/ascend-latest.json
+          cp data/performance.json /tmp/ascend-performance.json
           # Only publish the generated data file; never force-push or rewrite other work.
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
             cp /tmp/ascend-latest.json data/latest.json
-            git add data/latest.json
+            cp /tmp/ascend-performance.json data/performance.json
+            git add data/latest.json data/performance.json
             if git diff --cached --quiet; then
               echo "Snapshot already published."
               exit 0
