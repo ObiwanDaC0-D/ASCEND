@@ -1,7 +1,7 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-05T00:43:11.948087+00:00",
+  "generated_at": "2026-11-05T14:12:37.940644+00:00",
   "price_as_of": "2026-11-04",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -12,7 +12,7 @@
       "momentum_5d_pct": 11.93,
       "trend_20d_pct": 24.38,
       "volatility_20d_pct": 38.26,
-      "liquidity_usd": 1524293253,
+      "liquidity_usd": 1524446288,
       "validation": {
         "training": {
           "signals": 230,
@@ -37,9 +37,9 @@
         "count": 12,
         "lexicon_balance": -2,
         "headlines": [
-          "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - Yahoo Finance",
-          "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - The Motley Fool",
-          "Home Depot Inc Stock (HD) Moved Up by 3.32% on Nov 4: What Investors Need To Know - TradingKey"
+          "The Home Depot, Inc. (HD) stock price, news, quote and history - Yahoo Finance UK",
+          "Cramer: What must happen for Home Depot to keep its 25% monthlong rally going - CNBC",
+          "The Ultimate Dividend Growth Stock to Buy With $2,000 Right Now - The Motley Fool"
         ]
       },
       "institutional": {
@@ -55,7 +55,7 @@
       "momentum_5d_pct": 10.22,
       "trend_20d_pct": 18.18,
       "volatility_20d_pct": 27.27,
-      "liquidity_usd": 2154463349,
+      "liquidity_usd": 2154692195,
       "validation": {
         "training": {
           "signals": 244,
@@ -78,11 +78,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 1,
         "headlines": [
           "Mastercard Incorporated (MA) Is Riding the Global Shift Toward Digital Payments: Here\u2019s Why It Matters - Yahoo Finance",
-          "Is Mastercard Stock Paying You Enough For The Swings? - Trefis",
-          "Mastercard Inc Stock (MA) Moved Up by 3.47% on Nov 4: What Signal Does It Send? - TradingKey"
+          "China's Breo founder Ma Xuejun fined 11.84 million yuan for stock manipulation, resigns all posts same day - BigGo Finance",
+          "Mastercard (MA) CFO Ling sold 8,635 shares for $5.54M at an average $641.72 under a 10b5-1 plan - Quantisnow"
         ]
       },
       "institutional": {
@@ -98,7 +98,7 @@
       "momentum_5d_pct": 10.07,
       "trend_20d_pct": 19.29,
       "volatility_20d_pct": 36.27,
-      "liquidity_usd": 3549328113,
+      "liquidity_usd": 3550364522,
       "validation": {
         "training": {
           "signals": 241,
@@ -123,9 +123,9 @@
         "count": 12,
         "lexicon_balance": 2,
         "headlines": [
-          "42 ETFs Add to Lilly (LLY) Holdings on Nov. 2 - Yahoo Finance",
-          "The One Thing To Settle Before Buying Eli Lilly Stock - Trefis",
-          "Eli Lilly: The True Frontier Of Real-World AI Monetization (NYSE:LLY) - Seeking Alpha"
+          "ETFs Bought $90.0 Million of Lilly (LLY) on Nov. 3 - Yahoo Finance",
+          "Is Eli Lilly Stock Increasing Your Market Risk? - Trefis",
+          "Eli Lilly (LLY) Wins Ad Changes On Weight Loss Drugs And Recasts Its Pipeline - Yahoo Finance"
         ]
       },
       "institutional": {
@@ -141,7 +141,7 @@
       "momentum_5d_pct": 8.76,
       "trend_20d_pct": 19.42,
       "volatility_20d_pct": 26.59,
-      "liquidity_usd": 2506684511,
+      "liquidity_usd": 2507248609,
       "validation": {
         "training": {
           "signals": 298,
@@ -168,7 +168,7 @@
         "headlines": [
           "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - Yahoo Finance",
           "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - The Motley Fool",
-          "Stocks rally as Democrats' midterm election sweep removes Wall Street's political uncertainty - Quartz"
+          "Walmart (WMT) Stock Looks About Right After A 178% Run - Simply Wall St"
         ]
       },
       "institutional": {
@@ -184,7 +184,7 @@
       "momentum_5d_pct": 8.98,
       "trend_20d_pct": 17.33,
       "volatility_20d_pct": 24.1,
-      "liquidity_usd": 2755693895,
+      "liquidity_usd": 2755748815,
       "validation": {
         "training": {
           "signals": 233,
@@ -207,11 +207,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
+        "lexicon_balance": 0,
         "headlines": [
-          "V Stock Quote Price and Forecast - CNN",
-          "Graphano Energy Ltd. (GEL.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Visa (NYSE:V) Stock Jumps 3.8% - Should You Buy? - MarketBeat"
+          "Topicus.com Inc. (TOI.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "Homerun Resources Inc. (HMR.V) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "Visa Inc. $V Stock Acquired by Ascent Group LLC - MarketBeat"
         ]
       },
       "institutional": {
