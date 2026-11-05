@@ -22,3 +22,7 @@ Run **Actions → ASCEND daily market scan → Run workflow** on `main`. Wait fo
 
 ## Next priority
 A fully prospective append-only external audit, an explicit time-of-signal data cutoff, real daily capital and position accounting, and independently measured executable slippage. Do not infer a profitable trading advantage from the current prototype.
+
+## Version 10 reliability work
+
+Data freshness and coherent trading-session checks are required before publishing a new signal.
