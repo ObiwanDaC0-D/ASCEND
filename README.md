@@ -1,8 +1,8 @@
-# ASCEND 5.0 — The Five + Performance Laboratory
+# ASCEND 7.0 — The Five + Portfolio Research
 
 A minimalist GitHub Pages stock research prototype. **LAUNCH ASCEND** loads the last completed scheduled scan; it does not execute live trading or trigger an immediate scan.
 
-## What's new
+## Version 7\n- New collapsible five-stock basket research view with recent completed cohort history and SPY-relative comparisons.\n- Exploratory uncertainty intervals appear after 20 complete signal-day baskets.\n- Journal price retrieval extended to two years for longer tracking continuity; external data still has revision and availability limits.\n- These are descriptive paper outcomes, not a compounded or executable portfolio.\n\n## What's new
 - `journal.py` records the five research candidates once per **market signal date** in `data/performance.json`.
 - Subsequent scans evaluate **2-session and 5-session** outcomes only after future data is available.
 - The entry proxy is the **next common trading session's adjusted closing price**, rather than the signal-day closing price. This is a hypothetical observation, **not an executable fill**.
@@ -29,5 +29,5 @@ For optional SEC context, set the repository Actions secret `SEC_USER_AGENT` to 
 - No actual trading, position sizing, portfolio equity curve or portfolio-level return is calculated.
 - SEC Form 4 filing counts are not purchase counts; alternative correlations are exploratory only and excluded from rankings.
 
-## Planned V6
+## Future work
 Robust timestamped signal audit trail, independent benchmark-matched portfolio accounting, realistic entry/exit execution assumptions, and uncertainty intervals. No production trading until a genuine prospective evaluation shows a defensible advantage.
