@@ -1,38 +1,23 @@
-# ASCEND 10.0 — Prospective Audit & Daily Paper Marks
+# ASCEND — The Five
 
-ASCEND is an experimental stock research tool with a one-button GitHub Pages interface. It is **not** an investment adviser, a broker, or a validated predictive model.
+Minimalist GitHub Pages research application. One button retrieves five experimental momentum-screened stocks from the most recent scheduled analysis.
 
-## What's new in V9
-- **Strategy audit metadata:** each newly recorded signal day captures the strategy identifier, a SHA-256-derived fingerprint of the documented screening rules, UTC scan timestamp, and the market data session date. Legacy entries are explicitly unversioned rather than retroactively attributed to V9.
-- **Daily paper marks:** independently track the hypothetical equal-weight performance of each recorded five-stock cohort using next-session adjusted closing prices, including SPY-relative returns and a 10-basis-point illustrative round-trip cost.
-- **No future-data substitution:** marks appear only for sessions already present in downloaded historical data; incomplete horizons are labeled as maturing.
-- **Dashboard:** expanded Portfolio Research shows the most recent daily cohort marks and their strategy version, alongside V8 downside, costs and drawdown diagnostics.
-- **Tests:** deterministic rule fingerprint and no-future-observation tests.
+## Simplified interface
+- One fetch of `data/latest.json` per launch, instead of two competing requests.
+- Five compact stock cards showing ticker, last close and 5-session momentum.
+- One expandable **Why this stock?** area per selection.
+- One consolidated **Research & performance** panel for prospective outcomes, risk, cost sensitivity, and paper observations.
+- Mobile-friendly layout, keyboard-visible focus states, reduced-motion support, plain-text DOM construction and clear stale-data/error messages.
+- Replaced legacy inline JavaScript and duplicate `performance_view.js` with `app.js`.
 
-## Start V9
-Run **Actions → ASCEND daily market scan → Run workflow** on `main`. Wait for the run to succeed, then visit the Pages site and click **LAUNCH ASCEND**. The button reads the last published scan, not an immediate new computation.
+## Reliability maintenance
+- Added missing direct dependencies: NumPy and Requests.
+- Maintained V10 coherent-session and valid-history checks.
+- Preserved Python scanner, journal, benchmark, SEC filing context, and alternative research.
+- Ensured the scheduled publisher can create a placeholder performance JSON if the journal fails before its first successful run.
 
-## Important limitations
-- A rules fingerprint is a documentation and change-detection aid, **not an immutable or cryptographically signed audit trail**. Repository administrators can edit history or records.
-- The timestamp records when the scanner generated its JSON, not the precise time the ranking decision became available at a tradeable exchange price. Earlier V5–V8 signals cannot be assumed to have V9 provenance.
-- Daily marks are **per-cohort hypothetical liquidation observations**; they are not a consolidated portfolio with simultaneous position sizing, cash constraints, daily financing, turnover or trade execution.
-- Next-session adjusted closes are not guaranteed executable fills. Yahoo Finance data can be delayed or retrospectively adjusted.
-- Cohort outcomes overlap; the statistical interval, sequential drawdown illustration and averages are descriptive only.
-- The momentum score is unvalidated. Institutional filings and unusual correlations are research context, **not** ranking inputs.
+## Activate
+Run **Actions → ASCEND daily market scan → Run workflow**. After it completes successfully, open the GitHub Pages site and click **LAUNCH ASCEND**. The site is static: it cannot trigger an immediate scan.
 
-## Next priority
-A fully prospective append-only external audit, an explicit time-of-signal data cutoff, real daily capital and position accounting, and independently measured executable slippage. Do not infer a profitable trading advantage from the current prototype.
-
-## Version 10 reliability work
-
-Data freshness and coherent trading-session checks are required before publishing a new signal.
-
-## V10 delivered reliability layer
-- `quality_lab.py` validates positive, complete, ordered closing-price histories and rejects duplicate ticker picks or mixed trading-session dates.
-- `scanner.py` only publishes `status: ok` after the five-pick session-coherence gate; failed checks leave the scan unavailable instead of presenting selections as verified.
-- `data_quality` in the latest snapshot communicates whether the gate passed. A pass is a basic integrity check, not proof of data accuracy or predictive performance.
-- `tests/test_quality_lab.py` covers duplicate symbols, mixed sessions, and invalid history.
-- Existing V9 paper-mark tracking and research remain intact.
-
-### V10 scope limits
-This release does **not** yet include cash-constrained daily account accounting, external alert delivery, signed immutable audit logs, or verified live execution prices. Historical closing prices may be revised. The new gate checks internal consistency, not market-feed correctness. Run the GitHub Actions workflow to execute the tests and publish a V10 snapshot.
+## Limitations
+The screening strategy is an unvalidated heuristic, not an investment recommendation or a calibrated probability model. Prices are historical daily closes, not live or guaranteed executable fills. Cohort returns overlap; the paper journal is not a cash-constrained brokerage account. No trading is performed. The quality gate tests internal consistency but cannot verify provider correctness. A successful end-to-end GitHub Actions run should be confirmed before relying on a new snapshot.
