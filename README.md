@@ -1,4 +1,4 @@
-# ASCEND 9.0 — Prospective Audit & Daily Paper Marks
+# ASCEND 10.0 — Prospective Audit & Daily Paper Marks
 
 ASCEND is an experimental stock research tool with a one-button GitHub Pages interface. It is **not** an investment adviser, a broker, or a validated predictive model.
 
@@ -26,3 +26,13 @@ A fully prospective append-only external audit, an explicit time-of-signal data 
 ## Version 10 reliability work
 
 Data freshness and coherent trading-session checks are required before publishing a new signal.
+
+## V10 delivered reliability layer
+- `quality_lab.py` validates positive, complete, ordered closing-price histories and rejects duplicate ticker picks or mixed trading-session dates.
+- `scanner.py` only publishes `status: ok` after the five-pick session-coherence gate; failed checks leave the scan unavailable instead of presenting selections as verified.
+- `data_quality` in the latest snapshot communicates whether the gate passed. A pass is a basic integrity check, not proof of data accuracy or predictive performance.
+- `tests/test_quality_lab.py` covers duplicate symbols, mixed sessions, and invalid history.
+- Existing V9 paper-mark tracking and research remain intact.
+
+### V10 scope limits
+This release does **not** yet include cash-constrained daily account accounting, external alert delivery, signed immutable audit logs, or verified live execution prices. Historical closing prices may be revised. The new gate checks internal consistency, not market-feed correctness. Run the GitHub Actions workflow to execute the tests and publish a V10 snapshot.
