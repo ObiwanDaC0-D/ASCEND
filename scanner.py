@@ -1,4 +1,4 @@
-"""ASCEND V9: benchmark-aware research with time-ordered holdout and an exploratory alternative-data lab.
+"""ASCEND V10: benchmark-aware research with time-ordered holdout and an exploratory alternative-data lab.
 Not a trading recommendation, probability model, or verified predictive edge.
 """
 import json, math, time
@@ -10,6 +10,7 @@ import pandas as pd
 import requests
 import yfinance as yf
 import xml.etree.ElementTree as ET
+from quality_lab import coherent_sessions, valid_history
 from institutional import fetch_insider_context
 from alternative_lab import evaluate as evaluate_alternative
 
@@ -30,7 +31,7 @@ def frame(ticker):
     if df.empty:return None
     c=df["Close"].squeeze().dropna().astype(float)
     v=df["Volume"].squeeze().reindex(c.index).astype(float)
-    if len(c)<300:return None
+    if len(c)<300 or not valid_history(c):return None
     return c,v
 def diagnostics(c,bench):
     """Past-only signals and strictly subsequent five-session outcomes.
@@ -59,7 +60,7 @@ def diagnostics(c,bench):
     return {"training":a,"holdout":b,"holdout_sessions":120,"method":"time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"}
 def main():
     now=datetime.now(timezone.utc)
-    out={"version":9,"status":"unavailable","generated_at":now.isoformat(),"price_as_of":None,"universe_size":len(TICKERS),"method":"price momentum, liquidity, volatility; time-ordered holdout vs SPY","picks":[],"message":"No qualified opportunities.","alternative_lab":{"status":"research_only","message":"Unconventional relationships are not allowed to affect rankings without pre-registered, out-of-sample validation."},"warnings":["Experimental heuristic, not a calibrated return forecast.","Overlapping outcomes and selection effects limit inference.","News and alternative signals do not influence rankings."]}
+    out={"version":10,"status":"unavailable","generated_at":now.isoformat(),"price_as_of":None,"universe_size":len(TICKERS),"method":"price momentum, liquidity, volatility; time-ordered holdout vs SPY","picks":[],"message":"No qualified opportunities.","alternative_lab":{"status":"research_only","message":"Unconventional relationships are not allowed to affect rankings without pre-registered, out-of-sample validation."},"warnings":["Experimental heuristic, not a calibrated return forecast.","Overlapping outcomes and selection effects limit inference.","News and alternative signals do not influence rankings."]}
     try:
         spy=frame("SPY")
         if spy is None:raise RuntimeError("Benchmark data unavailable")
@@ -96,7 +97,10 @@ def main():
                 out["alternative_lab"]={"status":"unavailable","reason":type(exc).__name__}
             for p in picks:
                 p["institutional"]=out["institutional"].get("companies",{}).get(p["ticker"],{})
-            out.update(status="ok",picks=picks,price_as_of=min(p["as_of"] for p in picks),message="Five experimental screening candidates; predictive advantage not established.")
+            session=min(p["as_of"] for p in picks)
+            if not coherent_sessions(picks,session):
+                raise ValueError("Inconsistent trading sessions or duplicate selections; publication blocked")
+            out.update(status="ok",picks=picks,price_as_of=session,message="Five experimental screening candidates; predictive advantage not established.")
         else:out["message"]=f"Only {len(candidates)} qualified candidates; no five-stock list published."
     except Exception as exc:out["message"]="Scan unavailable: "+type(exc).__name__+" "+str(exc)[:100]
     try:
