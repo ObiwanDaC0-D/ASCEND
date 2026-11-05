@@ -1,4 +1,4 @@
-"""ASCEND V6 prospective, close-to-close paper research journal.
+"""ASCEND V7 prospective, close-to-close paper research journal.
 
 Signals are recorded at session close; entry is the NEXT session's adjusted close,
 not a tradeable guaranteed fill. No lookahead and no brokerage integration.
@@ -14,7 +14,7 @@ PATH=Path("data/performance.json")
 COST_BPS=10 # round-trip friction, illustrative, applied once at exit
 HORIZONS=(2,5)
 def series(ticker):
-    d=yf.download(ticker,period="3mo",interval="1d",auto_adjust=True,progress=False,threads=False)
+    d=yf.download(ticker,period="2y",interval="1d",auto_adjust=True,progress=False,threads=False)
     if d.empty:return None
     c=d["Close"].squeeze().dropna().astype(float)
     c.index=pd.to_datetime(c.index).tz_localize(None).normalize()
