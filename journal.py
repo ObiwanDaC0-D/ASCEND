@@ -1,4 +1,4 @@
-"""ASCEND V7 prospective, close-to-close paper research journal.
+"""ASCEND V8 prospective, close-to-close paper research journal.
 
 Signals are recorded at session close; entry is the NEXT session's adjusted close,
 not a tradeable guaranteed fill. No lookahead and no brokerage integration.
@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 import pandas as pd
 import yfinance as yf
 from performance_lab import summarize
+from risk_lab import evaluate as evaluate_risk
 
 PATH=Path("data/performance.json")
 COST_BPS=10 # round-trip friction, illustrative, applied once at exit
@@ -69,6 +70,7 @@ def update(snapshot):
         summary[str(h)]={"observations":len(vals),"average_net_pct":round(sum(x["net_pct"] for x in vals)/len(vals),3) if vals else None,"average_excess_vs_spy_pct":round(sum(x["excess_net_pct"] for x in vals)/len(vals),3) if vals else None,"positive_fraction":round(sum(x["net_pct"]>0 for x in vals)/len(vals),3) if vals else None}
     data["summary"]=summary
     data["cohorts"]={str(h):summarize(records,h) for h in HORIZONS}
+    data["risk"]={str(h):evaluate_risk(records,h) for h in HORIZONS}
     PATH.parent.mkdir(parents=True,exist_ok=True)
     PATH.write_text(json.dumps(data,indent=2,allow_nan=False)+"\n")
-    return {"status":"tracking","signal_days":len(records),"summary":summary,"cohorts":data["cohorts"],"method":data["method"]}
+    return {"status":"tracking","signal_days":len(records),"summary":summary,"cohorts":data["cohorts"],"risk":data["risk"],"method":data["method"]}
