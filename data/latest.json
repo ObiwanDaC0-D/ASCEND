@@ -1,7 +1,7 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-05T00:25:58.475795+00:00",
+  "generated_at": "2026-11-05T00:43:11.948087+00:00",
   "price_as_of": "2026-11-04",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -35,7 +35,7 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": -3,
+        "lexicon_balance": -2,
         "headlines": [
           "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - Yahoo Finance",
           "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - The Motley Fool",
