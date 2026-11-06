@@ -72,10 +72,74 @@
         {
           "ticker": "INTU",
           "rank": 1,
-          "outcomes": {}
+          "outcomes": {},
+          "entry_date": "2026-11-06",
+          "entry_price": 341.5,
+          "benchmark_entry": 735.29
         },
         {
           "ticker": "HD",
+          "rank": 2,
+          "outcomes": {},
+          "entry_date": "2026-11-06",
+          "entry_price": 343.47,
+          "benchmark_entry": 735.29
+        },
+        {
+          "ticker": "COST",
+          "rank": 3,
+          "outcomes": {},
+          "entry_date": "2026-11-06",
+          "entry_price": 1053.5601,
+          "benchmark_entry": 735.29
+        },
+        {
+          "ticker": "PEP",
+          "rank": 4,
+          "outcomes": {},
+          "entry_date": "2026-11-06",
+          "entry_price": 141.34,
+          "benchmark_entry": 735.29
+        },
+        {
+          "ticker": "WMT",
+          "rank": 5,
+          "outcomes": {},
+          "entry_date": "2026-11-06",
+          "entry_price": 125.52,
+          "benchmark_entry": 735.29
+        }
+      ]
+    },
+    {
+      "signal_date": "2026-11-06",
+      "captured_at": "2026-11-06T23:08:45.130510+00:00",
+      "strategy": {
+        "strategy_id": "momentum-5-20-liquidity-v1",
+        "rules_hash": "5971968409d81e4d",
+        "decision_timestamp_utc": "2026-11-06T23:08:33.296469+00:00",
+        "price_as_of": "2026-11-06",
+        "rules": {
+          "universe": "fixed 40-stock starter universe",
+          "min_price": 5,
+          "min_dollar_volume_20d": 20000000,
+          "min_mom5_pct": 0,
+          "min_mom20_pct": 0,
+          "max_annual_vol_pct": 90,
+          "rank": "mom5+.3*mom20-.04*annual_vol",
+          "cost_bps": 10,
+          "entry": "next common session adjusted close"
+        },
+        "warning": "Recorded on first successful scan for a session, not a contemporaneous exchange execution timestamp."
+      },
+      "picks": [
+        {
+          "ticker": "HD",
+          "rank": 1,
+          "outcomes": {}
+        },
+        {
+          "ticker": "GE",
           "rank": 2,
           "outcomes": {}
         },
@@ -90,14 +154,14 @@
           "outcomes": {}
         },
         {
-          "ticker": "WMT",
+          "ticker": "MA",
           "rank": 5,
           "outcomes": {}
         }
       ]
     }
   ],
-  "updated_at": "2026-11-05T23:11:35.407917+00:00",
+  "updated_at": "2026-11-06T23:08:45.130525+00:00",
   "method": "Signals recorded after closing data; next common session adjusted close is hypothetical entry; 2/5 subsequent sessions, 10 bps illustrative round-trip cost; no execution.",
   "summary": {
     "2": {
@@ -174,11 +238,30 @@
             "basket_net_pct": -0.1,
             "spy_pct": 0.0,
             "excess_pct": -0.1
+          },
+          {
+            "date": "2026-11-06",
+            "basket_net_pct": -1.067,
+            "spy_pct": 0.312,
+            "excess_pct": -1.379
+          }
+        ]
+      },
+      {
+        "signal_date": "2026-11-05",
+        "strategy_id": "momentum-5-20-liquidity-v1",
+        "complete": false,
+        "marks": [
+          {
+            "date": "2026-11-06",
+            "basket_net_pct": -0.1,
+            "spy_pct": 0.0,
+            "excess_pct": -0.1
           }
         ]
       }
     ],
-    "cohorts_with_marks": 1,
+    "cohorts_with_marks": 2,
     "note": "Each path independently tracks a five-stock equal-weight cohort; overlaps are not consolidated into a cash-constrained account. Next-session close is hypothetical. Cost is applied to each liquidation mark."
   }
 }

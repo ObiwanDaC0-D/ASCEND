@@ -1,88 +1,45 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-05T23:11:21.514669+00:00",
-  "price_as_of": "2026-11-05",
+  "generated_at": "2026-11-06T23:08:33.296469+00:00",
+  "price_as_of": "2026-11-06",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
   "picks": [
     {
-      "ticker": "INTU",
-      "price": 354.84,
-      "momentum_5d_pct": 7.14,
-      "trend_20d_pct": 16.77,
-      "volatility_20d_pct": 43.61,
-      "liquidity_usd": 1039080533,
+      "ticker": "HD",
+      "price": 343.47,
+      "momentum_5d_pct": 4.33,
+      "trend_20d_pct": 18.14,
+      "volatility_20d_pct": 38.61,
+      "liquidity_usd": 1541517818,
       "validation": {
         "training": {
-          "signals": 193,
-          "positive_fraction": 0.487,
-          "average_return_pct": -0.29,
-          "average_excess_vs_spy_pct": -0.56
+          "signals": 229,
+          "positive_fraction": 0.524,
+          "average_return_pct": 0.05,
+          "average_excess_vs_spy_pct": -0.4
         },
         "holdout": {
           "signals": 37,
-          "positive_fraction": 0.703,
-          "average_return_pct": 2.68,
-          "average_excess_vs_spy_pct": 2.44
+          "positive_fraction": 0.595,
+          "average_return_pct": 0.86,
+          "average_excess_vs_spy_pct": 1.07
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-05",
+      "as_of": "2026-11-06",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 1,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
+        "lexicon_balance": 0,
         "headlines": [
-          "Intuit (INTU) Crossed Above the 200-Day Moving Average: What That Means for Investors - Yahoo Finance",
-          "Why Intuit Stock Jumped 24% in October - The Motley Fool",
-          "Intuit Inc. $INTU Stock: Rakuten Investment Management Inc. Raises Stake - MarketBeat"
-        ]
-      },
-      "institutional": {
-        "form4_count_90d": 24,
-        "latest_filed": "2026-11-03",
-        "cik": "0000896878",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      }
-    },
-    {
-      "ticker": "HD",
-      "price": 349.94,
-      "momentum_5d_pct": 6.37,
-      "trend_20d_pct": 18.44,
-      "volatility_20d_pct": 38.39,
-      "liquidity_usd": 1523614456,
-      "validation": {
-        "training": {
-          "signals": 230,
-          "positive_fraction": 0.526,
-          "average_return_pct": 0.06,
-          "average_excess_vs_spy_pct": -0.39
-        },
-        "holdout": {
-          "signals": 36,
-          "positive_fraction": 0.583,
-          "average_return_pct": 0.77,
-          "average_excess_vs_spy_pct": 0.91
-        },
-        "holdout_sessions": 120,
-        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
-      },
-      "as_of": "2026-11-05",
-      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 2,
-      "news": {
-        "status": "context_only",
-        "count": 12,
-        "lexicon_balance": -1,
-        "headlines": [
-          "Home Depot (HD) Jumped, What Is Driving Attention Now? - Yahoo Finance",
-          "1 Reason to Buy Home Depot Stock During This Historically Weak Housing Market - The Motley Fool",
-          "Cramer: What must happen for Home Depot to keep its 25% monthlong rally going - CNBC"
+          "HD Sep 2027 210.000 call (HD270917C00210000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "Apple and Home Depot join list of objectors to tokenized stock plan pushed by NYSE owner - Fortune",
+          "7,772 The Home Depot, Inc. $HD Shares Sold by StrongBox Wealth LLC - MarketBeat"
         ]
       },
       "institutional": {
@@ -93,39 +50,82 @@
       }
     },
     {
-      "ticker": "COST",
-      "price": 1065.59,
-      "momentum_5d_pct": 7.14,
-      "trend_20d_pct": 12.58,
-      "volatility_20d_pct": 23.35,
-      "liquidity_usd": 2369786449,
+      "ticker": "GE",
+      "price": 323.24,
+      "momentum_5d_pct": 7.1,
+      "trend_20d_pct": 4.88,
+      "volatility_20d_pct": 40.75,
+      "liquidity_usd": 1708698363,
       "validation": {
         "training": {
-          "signals": 261,
-          "positive_fraction": 0.598,
-          "average_return_pct": 0.4,
-          "average_excess_vs_spy_pct": -0.2
+          "signals": 307,
+          "positive_fraction": 0.596,
+          "average_return_pct": 0.75,
+          "average_excess_vs_spy_pct": 0.33
         },
         "holdout": {
-          "signals": 37,
-          "positive_fraction": 0.514,
-          "average_return_pct": 0.06,
-          "average_excess_vs_spy_pct": -0.34
+          "signals": 38,
+          "positive_fraction": 0.605,
+          "average_return_pct": 0.94,
+          "average_excess_vs_spy_pct": 0.93
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-05",
+      "as_of": "2026-11-06",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 2,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 1,
+        "headlines": [
+          "GE Aerospace Lands $12.9 Billion China Deals. Shares Rise - Yahoo Finance",
+          "GE Aerospace stock outperforms competitors on strong trading day - MarketWatch",
+          "If You Invested $100 In GE Aerospace Stock 5 Years Ago, You Would Have This Much Today - Benzinga"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 5,
+        "latest_filed": "2026-11-05",
+        "cik": "0000040545",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "COST",
+      "price": 1053.56,
+      "momentum_5d_pct": 4.08,
+      "trend_20d_pct": 11.43,
+      "volatility_20d_pct": 24.04,
+      "liquidity_usd": 2441732758,
+      "validation": {
+        "training": {
+          "signals": 260,
+          "positive_fraction": 0.596,
+          "average_return_pct": 0.39,
+          "average_excess_vs_spy_pct": -0.21
+        },
+        "holdout": {
+          "signals": 38,
+          "positive_fraction": 0.526,
+          "average_return_pct": 0.17,
+          "average_excess_vs_spy_pct": -0.15
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-06",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 3,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": -1,
+        "lexicon_balance": -5,
         "headlines": [
-          "Cava Stock Wilts After Earnings. Wall Street Is Paring Its Price Targets. - Barron's",
-          "Mortgage rates dropped again, helped by the tech stock rout and post-election trades - Yahoo Finance",
-          "symbol__ Stock Quote Price and Forecast - CNN"
+          "What the AI stock crash cost your 401(k) for every $1,000 invested - Yahoo Finance",
+          "AI crush is powering one stock to sky-high valuations - CNBC",
+          "BT: What We Think of the Stock After Earnings - Morningstar"
         ]
       },
       "institutional": {
@@ -137,87 +137,87 @@
     },
     {
       "ticker": "PEP",
-      "price": 142.71,
-      "momentum_5d_pct": 6.67,
-      "trend_20d_pct": 11.2,
-      "volatility_20d_pct": 27.83,
-      "liquidity_usd": 1322675844,
+      "price": 141.34,
+      "momentum_5d_pct": 2.91,
+      "trend_20d_pct": 12.2,
+      "volatility_20d_pct": 26.99,
+      "liquidity_usd": 1318677254,
       "validation": {
         "training": {
-          "signals": 178,
-          "positive_fraction": 0.404,
-          "average_return_pct": -0.2,
-          "average_excess_vs_spy_pct": -0.37
+          "signals": 177,
+          "positive_fraction": 0.401,
+          "average_return_pct": -0.21,
+          "average_excess_vs_spy_pct": -0.36
         },
         "holdout": {
-          "signals": 22,
-          "positive_fraction": 0.364,
-          "average_return_pct": -0.94,
-          "average_excess_vs_spy_pct": -1.22
+          "signals": 23,
+          "positive_fraction": 0.391,
+          "average_return_pct": -0.77,
+          "average_excess_vs_spy_pct": -0.92
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-05",
+      "as_of": "2026-11-06",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 4,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 3,
+        "lexicon_balance": 1,
         "headlines": [
-          "What Is The Best Case For PepsiCo Stock? - Yahoo Finance",
-          "Is PepsiCo a Buy or a Wait as Value Clashes With Slower EPS Growth? - TradingView",
-          "PepsiCo Lowers 2026 EPS Outlook as North America Pressures Margins - Yahoo Finance"
+          "Pop Profit From PepsiCo Stock With A Short Strangle Strategy - Investor's Business Daily",
+          "KFC makes surprising Pepsi decision after Coca-Cola switch - Yahoo Finance",
+          "If You Invested $1,000 in PepsiCo 10 Years Ago, Here\u2019s What You\u2019d Have Now - 24/7 Wall St."
         ]
       },
       "institutional": {
-        "form4_count_90d": 15,
+        "form4_count_90d": 14,
         "latest_filed": "2026-10-23",
         "cik": "0000077476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     {
-      "ticker": "WMT",
-      "price": 127.72,
-      "momentum_5d_pct": 5.34,
-      "trend_20d_pct": 15.52,
-      "volatility_20d_pct": 27.04,
-      "liquidity_usd": 2642453224,
+      "ticker": "MA",
+      "price": 652.7,
+      "momentum_5d_pct": 2.3,
+      "trend_20d_pct": 10.79,
+      "volatility_20d_pct": 29.07,
+      "liquidity_usd": 2255626690,
       "validation": {
         "training": {
-          "signals": 298,
-          "positive_fraction": 0.594,
-          "average_return_pct": 0.57,
-          "average_excess_vs_spy_pct": 0.01
+          "signals": 244,
+          "positive_fraction": 0.537,
+          "average_return_pct": -0.03,
+          "average_excess_vs_spy_pct": -0.49
         },
         "holdout": {
-          "signals": 35,
-          "positive_fraction": 0.543,
-          "average_return_pct": -0.7,
-          "average_excess_vs_spy_pct": -0.42
+          "signals": 50,
+          "positive_fraction": 0.64,
+          "average_return_pct": 1.22,
+          "average_excess_vs_spy_pct": 1.01
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-05",
+      "as_of": "2026-11-06",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 5,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 2,
         "headlines": [
-          "Walmart (WMT) Stock Moves -1.12%: What You Should Know - Yahoo Finance",
-          "WMT Stock Quote Price and Forecast - CNN",
-          "Walmart (WMT) Stock Is Down 3%. Here's Why I'd Buy in November and Hold for a Decade. - The Motley Fool"
+          "Mastercard's 19% Services Growth Steals the Q3 Show: Buy or Hold MA? - Yahoo Finance",
+          "Patriots RB TreVeyon Henderson shares update on medical condition keeping him out - Boston Herald",
+          "Mastercard's 19% Services Growth Steals the Q3 Show: Buy or Hold MA? - Zacks Investment Research"
         ]
       },
       "institutional": {
-        "form4_count_90d": 36,
-        "latest_filed": "2026-11-05",
-        "cik": "0000104169",
+        "form4_count_90d": 12,
+        "latest_filed": "2026-11-03",
+        "cik": "0001141391",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     }
@@ -229,8 +229,8 @@
     "predictor": "San Diego daily mean temperature",
     "observations": 249,
     "lag_days": 1,
-    "correlation": -0.0248,
-    "max_lag_permutation_p": 0.9701,
+    "correlation": -0.0207,
+    "max_lag_permutation_p": 0.986,
     "permutations": 500,
     "warning": "Illustrative exploratory test; no independent holdout, seasonality controls, or causal evidence. Not quantum entanglement and not used in rankings."
   },
@@ -243,16 +243,16 @@
     "status": "context_only",
     "source": "SEC EDGAR submissions",
     "companies": {
-      "INTU": {
-        "form4_count_90d": 24,
-        "latest_filed": "2026-11-03",
-        "cik": "0000896878",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      },
       "HD": {
         "form4_count_90d": 12,
         "latest_filed": "2026-09-22",
         "cik": "0000354950",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "GE": {
+        "form4_count_90d": 5,
+        "latest_filed": "2026-11-05",
+        "cik": "0000040545",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "COST": {
@@ -262,15 +262,15 @@
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "PEP": {
-        "form4_count_90d": 15,
+        "form4_count_90d": 14,
         "latest_filed": "2026-10-23",
         "cik": "0000077476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
-      "WMT": {
-        "form4_count_90d": 36,
-        "latest_filed": "2026-11-05",
-        "cik": "0000104169",
+      "MA": {
+        "form4_count_90d": 12,
+        "latest_filed": "2026-11-03",
+        "cik": "0001141391",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
@@ -278,7 +278,7 @@
   },
   "performance": {
     "status": "tracking",
-    "signal_days": 2,
+    "signal_days": 3,
     "summary": {
       "2": {
         "observations": 0,
@@ -343,7 +343,7 @@
     },
     "daily_marks": {
       "status": "descriptive",
-      "cohorts_with_marks": 1,
+      "cohorts_with_marks": 2,
       "recent_paths": [
         {
           "signal_date": "2026-11-04",
@@ -352,6 +352,25 @@
           "marks": [
             {
               "date": "2026-11-05",
+              "basket_net_pct": -0.1,
+              "spy_pct": 0.0,
+              "excess_pct": -0.1
+            },
+            {
+              "date": "2026-11-06",
+              "basket_net_pct": -1.067,
+              "spy_pct": 0.312,
+              "excess_pct": -1.379
+            }
+          ]
+        },
+        {
+          "signal_date": "2026-11-05",
+          "strategy_id": "momentum-5-20-liquidity-v1",
+          "complete": false,
+          "marks": [
+            {
+              "date": "2026-11-06",
               "basket_net_pct": -0.1,
               "spy_pct": 0.0,
               "excess_pct": -0.1
