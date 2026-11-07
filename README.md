@@ -1,5 +1,13 @@
 # ASCEND — The Five
 
+ASCEND is an experimental stock-screening and research dashboard that presents five candidates from the latest scheduled market scan. Each selection includes a concise rationale, historical momentum information, and research context, with supporting performance and risk observations. It does not place trades, provide live executable quotes, or establish a validated profitable strategy.
+
+**At a glance:** A minimalist market-research dashboard displaying five momentum-screened stocks from scheduled analysis, with historical performance, selection explanations, and risk context.
+
+---
+
+# ASCEND — The Five
+
 Minimalist GitHub Pages research application. One button retrieves five experimental momentum-screened stocks from the most recent scheduled analysis.
 
 ## Simplified interface
