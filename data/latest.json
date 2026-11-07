@@ -1,7 +1,7 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-06T23:08:33.296469+00:00",
+  "generated_at": "2026-11-07T18:05:30.214857+00:00",
   "price_as_of": "2026-11-06",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
@@ -12,7 +12,7 @@
       "momentum_5d_pct": 4.33,
       "trend_20d_pct": 18.14,
       "volatility_20d_pct": 38.61,
-      "liquidity_usd": 1541517818,
+      "liquidity_usd": 1541522610,
       "validation": {
         "training": {
           "signals": 229,
@@ -35,11 +35,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 1,
         "headlines": [
-          "HD Sep 2027 210.000 call (HD270917C00210000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Apple and Home Depot join list of objectors to tokenized stock plan pushed by NYSE owner - Fortune",
-          "7,772 The Home Depot, Inc. $HD Shares Sold by StrongBox Wealth LLC - MarketBeat"
+          "Where Could Home Depot\u2019s Next Growth Come From? - Trefis",
+          "The Home Depot, Inc. $HD Stock Acquired by Waycross Partners LLC - MarketBeat",
+          "HD 261106 372.50C (HD261106C372500) Stock Options Chain | Quotes & News - Moomoo"
         ]
       },
       "institutional": {
@@ -55,7 +55,7 @@
       "momentum_5d_pct": 7.1,
       "trend_20d_pct": 4.88,
       "volatility_20d_pct": 40.75,
-      "liquidity_usd": 1708698363,
+      "liquidity_usd": 1708809849,
       "validation": {
         "training": {
           "signals": 307,
@@ -78,11 +78,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
+        "lexicon_balance": 2,
         "headlines": [
-          "GE Aerospace Lands $12.9 Billion China Deals. Shares Rise - Yahoo Finance",
+          "GE Vernova vs. Vistra: Which Industrials Stock Is a Better Buy for 2027? - Yahoo Finance",
           "GE Aerospace stock outperforms competitors on strong trading day - MarketWatch",
-          "If You Invested $100 In GE Aerospace Stock 5 Years Ago, You Would Have This Much Today - Benzinga"
+          "GE Stock Inches Up Overnight On $2.8B Navy Contract As Hypersonic Program Advances - Stocktwits"
         ]
       },
       "institutional": {
@@ -98,7 +98,7 @@
       "momentum_5d_pct": 4.08,
       "trend_20d_pct": 11.43,
       "volatility_20d_pct": 24.04,
-      "liquidity_usd": 2441732758,
+      "liquidity_usd": 2442688758,
       "validation": {
         "training": {
           "signals": 260,
@@ -121,11 +121,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": -5,
+        "lexicon_balance": 0,
         "headlines": [
-          "What the AI stock crash cost your 401(k) for every $1,000 invested - Yahoo Finance",
-          "AI crush is powering one stock to sky-high valuations - CNBC",
-          "BT: What We Think of the Stock After Earnings - Morningstar"
+          "Costco Wholesale (NASDAQ:COST): A Quality Stock With Strong Fundamentals and a Demanding Valuation - ChartMill",
+          "Six Flags Stock Price Focuses On Fatal Ride Accident Review And Legal Probe - Yahoo Finance Australia",
+          "symbol__ Stock Quote Price and Forecast - CNN"
         ]
       },
       "institutional": {
@@ -141,7 +141,7 @@
       "momentum_5d_pct": 2.91,
       "trend_20d_pct": 12.2,
       "volatility_20d_pct": 26.99,
-      "liquidity_usd": 1318677254,
+      "liquidity_usd": 1322766708,
       "validation": {
         "training": {
           "signals": 177,
@@ -164,11 +164,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
+        "lexicon_balance": 3,
         "headlines": [
-          "Pop Profit From PepsiCo Stock With A Short Strangle Strategy - Investor's Business Daily",
-          "KFC makes surprising Pepsi decision after Coca-Cola switch - Yahoo Finance",
-          "If You Invested $1,000 in PepsiCo 10 Years Ago, Here\u2019s What You\u2019d Have Now - 24/7 Wall St."
+          "Here's How Many Shares of PepsiCo You'd Need for $500 in Yearly Dividends - The Motley Fool",
+          "If You Invested $1,000 in PepsiCo 10 Years Ago, Here\u2019s What You\u2019d Have Now - Yahoo Finance",
+          "PepsiCo, Inc. $PEP Stock Holdings Lessened by Commonwealth Equity Services LLC - MarketBeat"
         ]
       },
       "institutional": {
@@ -184,7 +184,7 @@
       "momentum_5d_pct": 2.3,
       "trend_20d_pct": 10.79,
       "volatility_20d_pct": 29.07,
-      "liquidity_usd": 2255626690,
+      "liquidity_usd": 2255634653,
       "validation": {
         "training": {
           "signals": 244,
@@ -207,11 +207,11 @@
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 2,
+        "lexicon_balance": 3,
         "headlines": [
-          "Mastercard's 19% Services Growth Steals the Q3 Show: Buy or Hold MA? - Yahoo Finance",
-          "Patriots RB TreVeyon Henderson shares update on medical condition keeping him out - Boston Herald",
-          "Mastercard's 19% Services Growth Steals the Q3 Show: Buy or Hold MA? - Zacks Investment Research"
+          "Mastercard (NYSE:MA): A Quality Stock With High ROIC and Cash-Backed Growth - ChartMill",
+          "Berkshire stock is a haven again as investors flee AI rout while its own portfolio takes a hit - Fortune",
+          "Should Mastercard (MA) Investors Watch Its AI Bet And Card Rule Risk? - Yahoo Finance Singapore"
         ]
       },
       "institutional": {
