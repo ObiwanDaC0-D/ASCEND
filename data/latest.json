@@ -1,45 +1,45 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-09T23:11:09.404713+00:00",
-  "price_as_of": "2026-11-09",
+  "generated_at": "2026-11-10T23:07:17.685773+00:00",
+  "price_as_of": "2026-11-10",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
   "picks": [
     {
       "ticker": "HD",
-      "price": 353.42,
-      "momentum_5d_pct": 3.6,
-      "trend_20d_pct": 21.61,
-      "volatility_20d_pct": 39.1,
-      "liquidity_usd": 1565172706,
+      "price": 351.0,
+      "momentum_5d_pct": 5.2,
+      "trend_20d_pct": 19.42,
+      "volatility_20d_pct": 39.56,
+      "liquidity_usd": 1564751400,
       "validation": {
         "training": {
-          "signals": 226,
-          "positive_fraction": 0.518,
-          "average_return_pct": -0.05,
-          "average_excess_vs_spy_pct": -0.46
+          "signals": 225,
+          "positive_fraction": 0.516,
+          "average_return_pct": -0.07,
+          "average_excess_vs_spy_pct": -0.48
         },
         "holdout": {
-          "signals": 38,
-          "positive_fraction": 0.605,
-          "average_return_pct": 0.93,
-          "average_excess_vs_spy_pct": 1.14
+          "signals": 39,
+          "positive_fraction": 0.615,
+          "average_return_pct": 1.04,
+          "average_excess_vs_spy_pct": 1.26
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-09",
+      "as_of": "2026-11-10",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 1,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 1,
         "headlines": [
-          "Home Depot Inc Stock (HD) Moved Up by 3.43% on Nov 9: What Signal Does It Send? - TradingKey",
-          "Home Depot Stock: Analyst Estimates & Ratings - Barchart.com",
-          "Home Depot (HD) Stock: $343.47, Down 1.85% Nov 6 - JournalArta"
+          "Home Depot (HD) Reports Next Week: Wall Street Expects Earnings Growth - Yahoo Finance",
+          "Home Depot Stock: Hold Into Q3 Earnings, Transactions Must Turn Positive (NYSE:HD) - Seeking Alpha",
+          "Home Depot Inc Stock (HD) Moved Up by 3.43% on Nov 9: What Signal Does It Send? - TradingKey"
         ]
       },
       "institutional": {
@@ -51,17 +51,17 @@
     },
     {
       "ticker": "AMZN",
-      "price": 266.93,
-      "momentum_5d_pct": 8.67,
-      "trend_20d_pct": 2.85,
-      "volatility_20d_pct": 42.46,
-      "liquidity_usd": 12608948723,
+      "price": 270.87,
+      "momentum_5d_pct": 8.05,
+      "trend_20d_pct": 4.75,
+      "volatility_20d_pct": 42.66,
+      "liquidity_usd": 12818466878,
       "validation": {
         "training": {
-          "signals": 269,
-          "positive_fraction": 0.599,
-          "average_return_pct": 0.72,
-          "average_excess_vs_spy_pct": 0.22
+          "signals": 268,
+          "positive_fraction": 0.597,
+          "average_return_pct": 0.7,
+          "average_excess_vs_spy_pct": 0.21
         },
         "holdout": {
           "signals": 32,
@@ -72,17 +72,17 @@
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-09",
+      "as_of": "2026-11-10",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 2,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 2,
+        "lexicon_balance": 0,
         "headlines": [
-          "Andy Jassy Just Announced Fantastic News for Amazon Stock Investors - The Motley Fool",
-          "Why Amazon (AMZN) stock is up today - FinancialContent",
-          "What's Going On With Amazon Stock Monday? - Benzinga"
+          "Andy Jassy Just Delivered Great News for Amazon Stock Investors - Yahoo Finance",
+          "Amazon Stock Climbs: What's Going On? - Benzinga",
+          "Prediction: Amazon Stock Could Be Poised for Its Next Big Rally in 2027 - 24/7 Wall St."
         ]
       },
       "institutional": {
@@ -93,72 +93,72 @@
       }
     },
     {
-      "ticker": "GE",
-      "price": 335.54,
-      "momentum_5d_pct": 6.26,
-      "trend_20d_pct": 8.72,
-      "volatility_20d_pct": 42.63,
-      "liquidity_usd": 1740611420,
+      "ticker": "PEP",
+      "price": 143.61,
+      "momentum_5d_pct": 4.62,
+      "trend_20d_pct": 12.81,
+      "volatility_20d_pct": 27.09,
+      "liquidity_usd": 1328713163,
       "validation": {
         "training": {
-          "signals": 306,
-          "positive_fraction": 0.595,
-          "average_return_pct": 0.75,
-          "average_excess_vs_spy_pct": 0.34
+          "signals": 176,
+          "positive_fraction": 0.398,
+          "average_return_pct": -0.22,
+          "average_excess_vs_spy_pct": -0.36
         },
         "holdout": {
-          "signals": 39,
-          "positive_fraction": 0.615,
-          "average_return_pct": 1.07,
-          "average_excess_vs_spy_pct": 1.06
+          "signals": 25,
+          "positive_fraction": 0.44,
+          "average_return_pct": -0.49,
+          "average_excess_vs_spy_pct": -0.6
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-09",
+      "as_of": "2026-11-10",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 3,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 3,
+        "lexicon_balance": -4,
         "headlines": [
-          "GE Aerospace Stock: Is Wall Street Bullish or Bearish? - Yahoo Finance",
-          "GE Vernova Inc. stock rises Monday, outperforms market - MarketWatch",
-          "GE Aerospace CEO plans $95M stock sale as BNP Paribas flags slowing growth (GE:NYSE) - Seeking Alpha"
+          "PepsiCo Inc. stock outperforms competitors on strong trading day - MarketWatch",
+          "PepsiCo Stock Nearly Erases Its 2026 Loss as 1,000 Job Cuts Loom - Yahoo Finance",
+          "PepGen Stock Spikes 132% on Rare-Disease Win. These Rivals Are Feeling The Pressure. - Barron's"
         ]
       },
       "institutional": {
-        "form4_count_90d": 5,
-        "latest_filed": "2026-11-05",
-        "cik": "0000040545",
+        "form4_count_90d": 14,
+        "latest_filed": "2026-10-23",
+        "cik": "0000077476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     {
-      "ticker": "MSFT",
-      "price": 545.18,
-      "momentum_5d_pct": 7.51,
-      "trend_20d_pct": 0.74,
-      "volatility_20d_pct": 36.56,
-      "liquidity_usd": 13818896617,
+      "ticker": "COST",
+      "price": 1066.14,
+      "momentum_5d_pct": 4.6,
+      "trend_20d_pct": 11.85,
+      "volatility_20d_pct": 23.77,
+      "liquidity_usd": 2504103076,
       "validation": {
         "training": {
-          "signals": 231,
-          "positive_fraction": 0.571,
-          "average_return_pct": 0.24,
-          "average_excess_vs_spy_pct": -0.2
+          "signals": 258,
+          "positive_fraction": 0.593,
+          "average_return_pct": 0.33,
+          "average_excess_vs_spy_pct": -0.22
         },
         "holdout": {
-          "signals": 54,
-          "positive_fraction": 0.519,
-          "average_return_pct": 0.19,
-          "average_excess_vs_spy_pct": 0.26
+          "signals": 38,
+          "positive_fraction": 0.526,
+          "average_return_pct": 0.06,
+          "average_excess_vs_spy_pct": -0.26
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-09",
+      "as_of": "2026-11-10",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 4,
       "news": {
@@ -166,58 +166,58 @@
         "count": 12,
         "lexicon_balance": 0,
         "headlines": [
-          "MSFT Nov 2026 530.000 put (MSFT261109P00530000) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Microsoft: The AI Numbers Are Telling Two Stories (NASDAQ:MSFT) - Seeking Alpha",
-          "Microsoft Corp Stock (MSFT) Moved Up by 3.24% on Nov 9: Facts Behind the Movement - TradingKey"
-        ]
-      },
-      "institutional": {
-        "form4_count_90d": 43,
-        "latest_filed": "2026-11-09",
-        "cik": "0000789019",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      }
-    },
-    {
-      "ticker": "COST",
-      "price": 1066.18,
-      "momentum_5d_pct": 2.46,
-      "trend_20d_pct": 11.29,
-      "volatility_20d_pct": 23.99,
-      "liquidity_usd": 2489350300,
-      "validation": {
-        "training": {
-          "signals": 258,
-          "positive_fraction": 0.593,
-          "average_return_pct": 0.35,
-          "average_excess_vs_spy_pct": -0.21
-        },
-        "holdout": {
-          "signals": 38,
-          "positive_fraction": 0.526,
-          "average_return_pct": 0.05,
-          "average_excess_vs_spy_pct": -0.29
-        },
-        "holdout_sessions": 120,
-        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
-      },
-      "as_of": "2026-11-09",
-      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 5,
-      "news": {
-        "status": "context_only",
-        "count": 12,
-        "lexicon_balance": 0,
-        "headlines": [
-          "Costco Wholesale Corporation (COST) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Mortgage Rates Mostly Steady Despite Stock Market Bounce - Mortgage News Daily",
-          "Nvidia Stock Drops Even as Broader Market Rallies - The New York Times"
+          "Is A Steadier BP About To See A Meaningful Stock Price Uptick? - Forbes",
+          "Nvidia Stock Hit With Price-Target Cuts Amid Spy Scandal - Investor's Business Daily",
+          "European shares near record high as lower oil prices boost sentiment - Reuters"
         ]
       },
       "institutional": {
         "form4_count_90d": 28,
         "latest_filed": "2026-10-27",
         "cik": "0000909832",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "LLY",
+      "price": 1432.29,
+      "momentum_5d_pct": 1.63,
+      "trend_20d_pct": 22.78,
+      "volatility_20d_pct": 40.41,
+      "liquidity_usd": 4183168912,
+      "validation": {
+        "training": {
+          "signals": 242,
+          "positive_fraction": 0.599,
+          "average_return_pct": 0.39,
+          "average_excess_vs_spy_pct": 0.09
+        },
+        "holdout": {
+          "signals": 64,
+          "positive_fraction": 0.562,
+          "average_return_pct": 1.1,
+          "average_excess_vs_spy_pct": 0.92
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-10",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 5,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 5,
+        "headlines": [
+          "Eli Lilly and Company (LLY) Grew Revenue 48% as GLP-1 Demand Accelerated: Can Growth Continue? - Yahoo Finance Singapore",
+          "Can Eli Lilly (NYSE:LLY) Extend Its Climb Toward USD 1,411 as Healthcare Stocks Rally? - kalkine.ca",
+          "Gilead Sciences Stock Hits a New All-Time High: Is it Still a Good Buy? - The Globe and Mail"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 25,
+        "latest_filed": "2026-11-10",
+        "cik": "0000059478",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     }
@@ -229,8 +229,8 @@
     "predictor": "San Diego daily mean temperature",
     "observations": 247,
     "lag_days": 1,
-    "correlation": -0.0286,
-    "max_lag_permutation_p": 0.9701,
+    "correlation": -0.038,
+    "max_lag_permutation_p": 0.9042,
     "permutations": 500,
     "warning": "Illustrative exploratory test; no independent holdout, seasonality controls, or causal evidence. Not quantum entanglement and not used in rankings."
   },
@@ -255,16 +255,10 @@
         "cik": "0001018724",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
-      "GE": {
-        "form4_count_90d": 5,
-        "latest_filed": "2026-11-05",
-        "cik": "0000040545",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      },
-      "MSFT": {
-        "form4_count_90d": 43,
-        "latest_filed": "2026-11-09",
-        "cik": "0000789019",
+      "PEP": {
+        "form4_count_90d": 14,
+        "latest_filed": "2026-10-23",
+        "cik": "0000077476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "COST": {
@@ -272,19 +266,25 @@
         "latest_filed": "2026-10-27",
         "cik": "0000909832",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "LLY": {
+        "form4_count_90d": 25,
+        "latest_filed": "2026-11-10",
+        "cik": "0000059478",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     "message": "Public disclosure filing counts; never included in ranking."
   },
   "performance": {
     "status": "tracking",
-    "signal_days": 4,
+    "signal_days": 5,
     "summary": {
       "2": {
-        "observations": 5,
-        "average_net_pct": 0.444,
-        "average_excess_vs_spy_pct": -2.242,
-        "positive_fraction": 0.4
+        "observations": 10,
+        "average_net_pct": 0.643,
+        "average_excess_vs_spy_pct": -1.695,
+        "positive_fraction": 0.5
       },
       "5": {
         "observations": 0,
@@ -295,9 +295,9 @@
     },
     "cohorts": {
       "2": {
-        "completed_cohorts": 1,
-        "average_basket_net_pct": 0.444,
-        "average_basket_excess_pct": -2.242,
+        "completed_cohorts": 2,
+        "average_basket_net_pct": 0.643,
+        "average_basket_excess_pct": -1.695,
         "positive_cohort_fraction": 1,
         "uncertainty_95_pct": null,
         "cohorts": [
@@ -306,6 +306,12 @@
             "basket_net_pct": 0.4444,
             "benchmark_pct": 2.686,
             "excess_pct": -2.2416
+          },
+          {
+            "signal_date": "2026-11-05",
+            "basket_net_pct": 0.8412,
+            "benchmark_pct": 1.99,
+            "excess_pct": -1.1486
           }
         ],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
@@ -322,29 +328,29 @@
     },
     "risk": {
       "2": {
-        "completed_cohorts": 1,
+        "completed_cohorts": 2,
         "negative_fraction": 0.0,
         "worst_net_pct": 0.444,
         "cost_sensitivity": [
           {
             "round_trip_bps": 5,
-            "mean_basket_net_pct": 0.494,
-            "mean_excess_vs_spy_pct": -2.192
+            "mean_basket_net_pct": 0.693,
+            "mean_excess_vs_spy_pct": -1.645
           },
           {
             "round_trip_bps": 10,
-            "mean_basket_net_pct": 0.444,
-            "mean_excess_vs_spy_pct": -2.242
+            "mean_basket_net_pct": 0.643,
+            "mean_excess_vs_spy_pct": -1.695
           },
           {
             "round_trip_bps": 25,
-            "mean_basket_net_pct": 0.294,
-            "mean_excess_vs_spy_pct": -2.392
+            "mean_basket_net_pct": 0.493,
+            "mean_excess_vs_spy_pct": -1.845
           },
           {
             "round_trip_bps": 50,
-            "mean_basket_net_pct": 0.044,
-            "mean_excess_vs_spy_pct": -2.642
+            "mean_basket_net_pct": 0.243,
+            "mean_excess_vs_spy_pct": -2.095
           }
         ],
         "sequential_illustration": {
@@ -371,7 +377,7 @@
     },
     "daily_marks": {
       "status": "descriptive",
-      "cohorts_with_marks": 3,
+      "cohorts_with_marks": 4,
       "recent_paths": [
         {
           "signal_date": "2026-11-04",
@@ -395,6 +401,12 @@
               "basket_net_pct": 0.445,
               "spy_pct": 2.686,
               "excess_pct": -2.242
+            },
+            {
+              "date": "2026-11-10",
+              "basket_net_pct": 0.719,
+              "spy_pct": 2.308,
+              "excess_pct": -1.589
             }
           ]
         },
@@ -414,6 +426,12 @@
               "basket_net_pct": 0.626,
               "spy_pct": 2.366,
               "excess_pct": -1.74
+            },
+            {
+              "date": "2026-11-10",
+              "basket_net_pct": 0.841,
+              "spy_pct": 1.99,
+              "excess_pct": -1.149
             }
           ]
         },
@@ -424,6 +442,25 @@
           "marks": [
             {
               "date": "2026-11-09",
+              "basket_net_pct": -0.1,
+              "spy_pct": 0.0,
+              "excess_pct": -0.1
+            },
+            {
+              "date": "2026-11-10",
+              "basket_net_pct": 0.24,
+              "spy_pct": -0.368,
+              "excess_pct": 0.608
+            }
+          ]
+        },
+        {
+          "signal_date": "2026-11-09",
+          "strategy_id": "momentum-5-20-liquidity-v1",
+          "complete": false,
+          "marks": [
+            {
+              "date": "2026-11-10",
               "basket_net_pct": -0.1,
               "spy_pct": 0.0,
               "excess_pct": -0.1
