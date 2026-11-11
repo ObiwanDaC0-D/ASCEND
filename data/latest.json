@@ -1,174 +1,88 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-10T23:07:17.685773+00:00",
-  "price_as_of": "2026-11-10",
+  "generated_at": "2026-11-11T23:17:25.499418+00:00",
+  "price_as_of": "2026-11-11",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
   "picks": [
     {
-      "ticker": "HD",
-      "price": 351.0,
-      "momentum_5d_pct": 5.2,
-      "trend_20d_pct": 19.42,
-      "volatility_20d_pct": 39.56,
-      "liquidity_usd": 1564751400,
+      "ticker": "ANET",
+      "price": 196.68,
+      "momentum_5d_pct": 10.2,
+      "trend_20d_pct": 0.64,
+      "volatility_20d_pct": 86.25,
+      "liquidity_usd": 1519526251,
       "validation": {
         "training": {
-          "signals": 225,
-          "positive_fraction": 0.516,
-          "average_return_pct": -0.07,
-          "average_excess_vs_spy_pct": -0.48
+          "signals": 286,
+          "positive_fraction": 0.591,
+          "average_return_pct": 0.67,
+          "average_excess_vs_spy_pct": 0.12
         },
         "holdout": {
-          "signals": 39,
-          "positive_fraction": 0.615,
-          "average_return_pct": 1.04,
-          "average_excess_vs_spy_pct": 1.26
+          "signals": 52,
+          "positive_fraction": 0.385,
+          "average_return_pct": -2.41,
+          "average_excess_vs_spy_pct": -2.12
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-10",
+      "as_of": "2026-11-11",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 1,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
-        "headlines": [
-          "Home Depot (HD) Reports Next Week: Wall Street Expects Earnings Growth - Yahoo Finance",
-          "Home Depot Stock: Hold Into Q3 Earnings, Transactions Must Turn Positive (NYSE:HD) - Seeking Alpha",
-          "Home Depot Inc Stock (HD) Moved Up by 3.43% on Nov 9: What Signal Does It Send? - TradingKey"
-        ]
-      },
-      "institutional": {
-        "form4_count_90d": 12,
-        "latest_filed": "2026-09-22",
-        "cik": "0000354950",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      }
-    },
-    {
-      "ticker": "AMZN",
-      "price": 270.87,
-      "momentum_5d_pct": 8.05,
-      "trend_20d_pct": 4.75,
-      "volatility_20d_pct": 42.66,
-      "liquidity_usd": 12818466878,
-      "validation": {
-        "training": {
-          "signals": 268,
-          "positive_fraction": 0.597,
-          "average_return_pct": 0.7,
-          "average_excess_vs_spy_pct": 0.21
-        },
-        "holdout": {
-          "signals": 32,
-          "positive_fraction": 0.281,
-          "average_return_pct": -2.78,
-          "average_excess_vs_spy_pct": -2.65
-        },
-        "holdout_sessions": 120,
-        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
-      },
-      "as_of": "2026-11-10",
-      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 2,
-      "news": {
-        "status": "context_only",
-        "count": 12,
         "lexicon_balance": 0,
         "headlines": [
-          "Andy Jassy Just Delivered Great News for Amazon Stock Investors - Yahoo Finance",
-          "Amazon Stock Climbs: What's Going On? - Benzinga",
-          "Prediction: Amazon Stock Could Be Poised for Its Next Big Rally in 2027 - 24/7 Wall St."
+          "Arista Networks Inc Stock (ANET) Moved Up by 5.31% on Nov 11: Facts Behind the Movement - TradingKey",
+          "Arista\u2019s Co-Founder Has Sold About $668 Million of Stock Since May - 24/7 Wall St.",
+          "ANET Jan 2028 280.000 put (ANET280121P00280000) stock price, news, quote and history - Yahoo Finance UK"
         ]
       },
       "institutional": {
-        "form4_count_90d": 13,
-        "latest_filed": "2026-11-04",
-        "cik": "0001018724",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      }
-    },
-    {
-      "ticker": "PEP",
-      "price": 143.61,
-      "momentum_5d_pct": 4.62,
-      "trend_20d_pct": 12.81,
-      "volatility_20d_pct": 27.09,
-      "liquidity_usd": 1328713163,
-      "validation": {
-        "training": {
-          "signals": 176,
-          "positive_fraction": 0.398,
-          "average_return_pct": -0.22,
-          "average_excess_vs_spy_pct": -0.36
-        },
-        "holdout": {
-          "signals": 25,
-          "positive_fraction": 0.44,
-          "average_return_pct": -0.49,
-          "average_excess_vs_spy_pct": -0.6
-        },
-        "holdout_sessions": 120,
-        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
-      },
-      "as_of": "2026-11-10",
-      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 3,
-      "news": {
-        "status": "context_only",
-        "count": 12,
-        "lexicon_balance": -4,
-        "headlines": [
-          "PepsiCo Inc. stock outperforms competitors on strong trading day - MarketWatch",
-          "PepsiCo Stock Nearly Erases Its 2026 Loss as 1,000 Job Cuts Loom - Yahoo Finance",
-          "PepGen Stock Spikes 132% on Rare-Disease Win. These Rivals Are Feeling The Pressure. - Barron's"
-        ]
-      },
-      "institutional": {
-        "form4_count_90d": 14,
-        "latest_filed": "2026-10-23",
-        "cik": "0000077476",
+        "form4_count_90d": 33,
+        "latest_filed": "2026-11-10",
+        "cik": "0001596532",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     {
       "ticker": "COST",
-      "price": 1066.14,
-      "momentum_5d_pct": 4.6,
-      "trend_20d_pct": 11.85,
-      "volatility_20d_pct": 23.77,
-      "liquidity_usd": 2504103076,
+      "price": 1087.61,
+      "momentum_5d_pct": 3.93,
+      "trend_20d_pct": 10.92,
+      "volatility_20d_pct": 22.85,
+      "liquidity_usd": 2476002640,
       "validation": {
         "training": {
-          "signals": 258,
-          "positive_fraction": 0.593,
+          "signals": 259,
+          "positive_fraction": 0.595,
           "average_return_pct": 0.33,
-          "average_excess_vs_spy_pct": -0.22
+          "average_excess_vs_spy_pct": -0.21
         },
         "holdout": {
           "signals": 38,
           "positive_fraction": 0.526,
-          "average_return_pct": 0.06,
-          "average_excess_vs_spy_pct": -0.26
+          "average_return_pct": 0.14,
+          "average_excess_vs_spy_pct": -0.18
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-10",
+      "as_of": "2026-11-11",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 4,
+      "rank": 2,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 2,
         "headlines": [
-          "Is A Steadier BP About To See A Meaningful Stock Price Uptick? - Forbes",
-          "Nvidia Stock Hit With Price-Target Cuts Amid Spy Scandal - Investor's Business Daily",
-          "European shares near record high as lower oil prices boost sentiment - Reuters"
+          "COMMENTARY: Trading Day: AI cheer banishes rate hike fear - Reuters",
+          "Costco (COST) Declares $30 Special Dividend And Reauthorizes $4 Billion Buyback - Yahoo Finance",
+          "COST Stock Alert: What to Know as Costco Issues $30 Special Dividend - Barchart.com"
         ]
       },
       "institutional": {
@@ -179,45 +93,131 @@
       }
     },
     {
-      "ticker": "LLY",
-      "price": 1432.29,
-      "momentum_5d_pct": 1.63,
-      "trend_20d_pct": 22.78,
-      "volatility_20d_pct": 40.41,
-      "liquidity_usd": 4183168912,
+      "ticker": "GE",
+      "price": 342.75,
+      "momentum_5d_pct": 4.04,
+      "trend_20d_pct": 11.64,
+      "volatility_20d_pct": 42.57,
+      "liquidity_usd": 1735496760,
       "validation": {
         "training": {
-          "signals": 242,
-          "positive_fraction": 0.599,
-          "average_return_pct": 0.39,
-          "average_excess_vs_spy_pct": 0.09
+          "signals": 306,
+          "positive_fraction": 0.595,
+          "average_return_pct": 0.75,
+          "average_excess_vs_spy_pct": 0.34
         },
         "holdout": {
-          "signals": 64,
-          "positive_fraction": 0.562,
-          "average_return_pct": 1.1,
-          "average_excess_vs_spy_pct": 0.92
+          "signals": 41,
+          "positive_fraction": 0.634,
+          "average_return_pct": 1.25,
+          "average_excess_vs_spy_pct": 1.28
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-10",
+      "as_of": "2026-11-11",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 5,
+      "rank": 3,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 5,
+        "lexicon_balance": 1,
         "headlines": [
-          "Eli Lilly and Company (LLY) Grew Revenue 48% as GLP-1 Demand Accelerated: Can Growth Continue? - Yahoo Finance Singapore",
-          "Can Eli Lilly (NYSE:LLY) Extend Its Climb Toward USD 1,411 as Healthcare Stocks Rally? - kalkine.ca",
-          "Gilead Sciences Stock Hits a New All-Time High: Is it Still a Good Buy? - The Globe and Mail"
+          "GE Aerospace (GE) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "GE Vernova Could Withstand a Slowing AI Spending Boom, Says J.P. Morgan - Barron's",
+          "GE Aerospace stock outperforms competitors on strong trading day - MarketWatch"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 4,
+        "latest_filed": "2026-11-05",
+        "cik": "0000040545",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "LLY",
+      "price": 1437.29,
+      "momentum_5d_pct": 1.36,
+      "trend_20d_pct": 18.91,
+      "volatility_20d_pct": 39.31,
+      "liquidity_usd": 4139861024,
+      "validation": {
+        "training": {
+          "signals": 243,
+          "positive_fraction": 0.601,
+          "average_return_pct": 0.41,
+          "average_excess_vs_spy_pct": 0.1
+        },
+        "holdout": {
+          "signals": 64,
+          "positive_fraction": 0.562,
+          "average_return_pct": 1.07,
+          "average_excess_vs_spy_pct": 0.89
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-11",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 4,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": 2,
+        "headlines": [
+          "4 stocks to watch on Wednesday: LLY, BABA, PYPL, and NVDA (SP500:) - Seeking Alpha",
+          "S&P 500 After-Hours Movers: MNST, RDDT Among Gainers; VEEV, LLY Among Losers in Latest Session - ChartMill",
+          "Former Eli Lilly Sales Rep Sues Over Mounjaro Marketing; LLY Sto - GuruFocus"
         ]
       },
       "institutional": {
         "form4_count_90d": 25,
         "latest_filed": "2026-11-10",
         "cik": "0000059478",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "PEP",
+      "price": 143.94,
+      "momentum_5d_pct": 1.07,
+      "trend_20d_pct": 11.35,
+      "volatility_20d_pct": 26.89,
+      "liquidity_usd": 1341340712,
+      "validation": {
+        "training": {
+          "signals": 176,
+          "positive_fraction": 0.398,
+          "average_return_pct": -0.22,
+          "average_excess_vs_spy_pct": -0.36
+        },
+        "holdout": {
+          "signals": 26,
+          "positive_fraction": 0.462,
+          "average_return_pct": -0.43,
+          "average_excess_vs_spy_pct": -0.5
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-11",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 5,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": -2,
+        "headlines": [
+          "PepsiCo Stock Outlook: Is Wall Street Bullish or Bearish? - Yahoo Finance",
+          "PEP Stock Heads For Worst Month Since May: PepsiCo Commits $1B To Colombia Expansion, Targets Higher Prices Ahead Of Q3 Earnings - Stocktwits",
+          "PepsiCo Stock Nearly Erases Its 2026 Loss as 1,000 Job Cuts Loom - BeInCrypto"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 14,
+        "latest_filed": "2026-10-23",
+        "cik": "0000077476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     }
@@ -227,10 +227,10 @@
     "status": "exploratory_only",
     "target": "NVDA daily returns",
     "predictor": "San Diego daily mean temperature",
-    "observations": 247,
+    "observations": 248,
     "lag_days": 1,
-    "correlation": -0.038,
-    "max_lag_permutation_p": 0.9042,
+    "correlation": -0.0336,
+    "max_lag_permutation_p": 0.9222,
     "permutations": 500,
     "warning": "Illustrative exploratory test; no independent holdout, seasonality controls, or causal evidence. Not quantum entanglement and not used in rankings."
   },
@@ -243,22 +243,10 @@
     "status": "context_only",
     "source": "SEC EDGAR submissions",
     "companies": {
-      "HD": {
-        "form4_count_90d": 12,
-        "latest_filed": "2026-09-22",
-        "cik": "0000354950",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      },
-      "AMZN": {
-        "form4_count_90d": 13,
-        "latest_filed": "2026-11-04",
-        "cik": "0001018724",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      },
-      "PEP": {
-        "form4_count_90d": 14,
-        "latest_filed": "2026-10-23",
-        "cik": "0000077476",
+      "ANET": {
+        "form4_count_90d": 33,
+        "latest_filed": "2026-11-10",
+        "cik": "0001596532",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "COST": {
@@ -267,10 +255,22 @@
         "cik": "0000909832",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
+      "GE": {
+        "form4_count_90d": 4,
+        "latest_filed": "2026-11-05",
+        "cik": "0000040545",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
       "LLY": {
         "form4_count_90d": 25,
         "latest_filed": "2026-11-10",
         "cik": "0000059478",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "PEP": {
+        "form4_count_90d": 14,
+        "latest_filed": "2026-10-23",
+        "cik": "0000077476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
@@ -278,13 +278,13 @@
   },
   "performance": {
     "status": "tracking",
-    "signal_days": 5,
+    "signal_days": 6,
     "summary": {
       "2": {
-        "observations": 10,
-        "average_net_pct": 0.643,
-        "average_excess_vs_spy_pct": -1.695,
-        "positive_fraction": 0.5
+        "observations": 15,
+        "average_net_pct": 0.779,
+        "average_excess_vs_spy_pct": -1.094,
+        "positive_fraction": 0.6
       },
       "5": {
         "observations": 0,
@@ -295,9 +295,9 @@
     },
     "cohorts": {
       "2": {
-        "completed_cohorts": 2,
-        "average_basket_net_pct": 0.643,
-        "average_basket_excess_pct": -1.695,
+        "completed_cohorts": 3,
+        "average_basket_net_pct": 0.779,
+        "average_basket_excess_pct": -1.094,
         "positive_cohort_fraction": 1,
         "uncertainty_95_pct": null,
         "cohorts": [
@@ -312,6 +312,12 @@
             "basket_net_pct": 0.8412,
             "benchmark_pct": 1.99,
             "excess_pct": -1.1486
+          },
+          {
+            "signal_date": "2026-11-06",
+            "basket_net_pct": 1.0528,
+            "benchmark_pct": 0.946,
+            "excess_pct": 0.1068
           }
         ],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
@@ -328,29 +334,29 @@
     },
     "risk": {
       "2": {
-        "completed_cohorts": 2,
+        "completed_cohorts": 3,
         "negative_fraction": 0.0,
         "worst_net_pct": 0.444,
         "cost_sensitivity": [
           {
             "round_trip_bps": 5,
-            "mean_basket_net_pct": 0.693,
-            "mean_excess_vs_spy_pct": -1.645
+            "mean_basket_net_pct": 0.829,
+            "mean_excess_vs_spy_pct": -1.045
           },
           {
             "round_trip_bps": 10,
-            "mean_basket_net_pct": 0.643,
-            "mean_excess_vs_spy_pct": -1.695
+            "mean_basket_net_pct": 0.779,
+            "mean_excess_vs_spy_pct": -1.095
           },
           {
             "round_trip_bps": 25,
-            "mean_basket_net_pct": 0.493,
-            "mean_excess_vs_spy_pct": -1.845
+            "mean_basket_net_pct": 0.629,
+            "mean_excess_vs_spy_pct": -1.245
           },
           {
             "round_trip_bps": 50,
-            "mean_basket_net_pct": 0.243,
-            "mean_excess_vs_spy_pct": -2.095
+            "mean_basket_net_pct": 0.379,
+            "mean_excess_vs_spy_pct": -1.495
           }
         ],
         "sequential_illustration": {
@@ -377,7 +383,7 @@
     },
     "daily_marks": {
       "status": "descriptive",
-      "cohorts_with_marks": 4,
+      "cohorts_with_marks": 5,
       "recent_paths": [
         {
           "signal_date": "2026-11-04",
@@ -404,9 +410,15 @@
             },
             {
               "date": "2026-11-10",
-              "basket_net_pct": 0.719,
+              "basket_net_pct": 0.756,
               "spy_pct": 2.308,
-              "excess_pct": -1.589
+              "excess_pct": -1.552
+            },
+            {
+              "date": "2026-11-11",
+              "basket_net_pct": 1.045,
+              "spy_pct": 3.658,
+              "excess_pct": -2.613
             }
           ]
         },
@@ -432,6 +444,12 @@
               "basket_net_pct": 0.841,
               "spy_pct": 1.99,
               "excess_pct": -1.149
+            },
+            {
+              "date": "2026-11-11",
+              "basket_net_pct": 1.461,
+              "spy_pct": 3.335,
+              "excess_pct": -1.873
             }
           ]
         },
@@ -451,6 +469,12 @@
               "basket_net_pct": 0.24,
               "spy_pct": -0.368,
               "excess_pct": 0.608
+            },
+            {
+              "date": "2026-11-11",
+              "basket_net_pct": 1.053,
+              "spy_pct": 0.946,
+              "excess_pct": 0.107
             }
           ]
         },
@@ -461,6 +485,25 @@
           "marks": [
             {
               "date": "2026-11-10",
+              "basket_net_pct": -0.1,
+              "spy_pct": 0.0,
+              "excess_pct": -0.1
+            },
+            {
+              "date": "2026-11-11",
+              "basket_net_pct": -0.192,
+              "spy_pct": 1.319,
+              "excess_pct": -1.51
+            }
+          ]
+        },
+        {
+          "signal_date": "2026-11-10",
+          "strategy_id": "momentum-5-20-liquidity-v1",
+          "complete": false,
+          "marks": [
+            {
+              "date": "2026-11-11",
               "basket_net_pct": -0.1,
               "spy_pct": 0.0,
               "excess_pct": -0.1
