@@ -1,18 +1,18 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-11T23:17:25.499418+00:00",
-  "price_as_of": "2026-11-11",
+  "generated_at": "2026-11-12T23:10:55.160967+00:00",
+  "price_as_of": "2026-11-12",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
   "picks": [
     {
       "ticker": "ANET",
-      "price": 196.68,
-      "momentum_5d_pct": 10.2,
-      "trend_20d_pct": 0.64,
-      "volatility_20d_pct": 86.25,
-      "liquidity_usd": 1519526251,
+      "price": 206.63,
+      "momentum_5d_pct": 29.83,
+      "trend_20d_pct": 11.34,
+      "volatility_20d_pct": 85.6,
+      "liquidity_usd": 1519675330,
       "validation": {
         "training": {
           "signals": 286,
@@ -29,17 +29,17 @@
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-11",
+      "as_of": "2026-11-12",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 1,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 5,
         "headlines": [
-          "Arista Networks Inc Stock (ANET) Moved Up by 5.31% on Nov 11: Facts Behind the Movement - TradingKey",
-          "Arista\u2019s Co-Founder Has Sold About $668 Million of Stock Since May - 24/7 Wall St.",
-          "ANET Jan 2028 280.000 put (ANET280121P00280000) stock price, news, quote and history - Yahoo Finance UK"
+          "Arista Networks (ANET) Guides Higher, Is The Stock Overvalued Following Earnings? - Yahoo Finance Singapore",
+          "Here's A Bullish Trade To Consider For Recovering Arista Stock - Investor's Business Daily",
+          "Arista Networks Inc Stock (ANET) Moved Up by 4.87% on Nov 12: Facts Behind the Movement - TradingKey"
         ]
       },
       "institutional": {
@@ -50,72 +50,72 @@
       }
     },
     {
-      "ticker": "COST",
-      "price": 1087.61,
-      "momentum_5d_pct": 3.93,
-      "trend_20d_pct": 10.92,
-      "volatility_20d_pct": 22.85,
-      "liquidity_usd": 2476002640,
+      "ticker": "AVGO",
+      "price": 364.36,
+      "momentum_5d_pct": 24.98,
+      "trend_20d_pct": 5.82,
+      "volatility_20d_pct": 69.75,
+      "liquidity_usd": 8778334934,
       "validation": {
         "training": {
-          "signals": 259,
-          "positive_fraction": 0.595,
-          "average_return_pct": 0.33,
-          "average_excess_vs_spy_pct": -0.21
+          "signals": 242,
+          "positive_fraction": 0.479,
+          "average_return_pct": 0.64,
+          "average_excess_vs_spy_pct": 0.1
         },
         "holdout": {
-          "signals": 38,
-          "positive_fraction": 0.526,
-          "average_return_pct": 0.14,
-          "average_excess_vs_spy_pct": -0.18
+          "signals": 29,
+          "positive_fraction": 0.241,
+          "average_return_pct": -3.76,
+          "average_excess_vs_spy_pct": -3.31
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-11",
+      "as_of": "2026-11-12",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 2,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 2,
+        "lexicon_balance": -1,
         "headlines": [
-          "COMMENTARY: Trading Day: AI cheer banishes rate hike fear - Reuters",
-          "Costco (COST) Declares $30 Special Dividend And Reauthorizes $4 Billion Buyback - Yahoo Finance",
-          "COST Stock Alert: What to Know as Costco Issues $30 Special Dividend - Barchart.com"
+          "Why Broadcom Stock Rallied Thursday Morning - The Motley Fool",
+          "Broadcom Stock Outlook: Is Wall Street Bullish or Bearish? - Yahoo Finance",
+          "Jensen Huang Just Resigned From Nvidia. If You Have $5,000, These Are the 3 Tech Stocks to Buy - 24/7 Wall St."
         ]
       },
       "institutional": {
-        "form4_count_90d": 28,
-        "latest_filed": "2026-10-27",
-        "cik": "0000909832",
+        "form4_count_90d": 3,
+        "latest_filed": "2026-09-25",
+        "cik": "0001730168",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     {
-      "ticker": "GE",
-      "price": 342.75,
-      "momentum_5d_pct": 4.04,
-      "trend_20d_pct": 11.64,
-      "volatility_20d_pct": 42.57,
-      "liquidity_usd": 1735496760,
+      "ticker": "TXN",
+      "price": 312.48,
+      "momentum_5d_pct": 12.34,
+      "trend_20d_pct": 12.5,
+      "volatility_20d_pct": 56.1,
+      "liquidity_usd": 2778421053,
       "validation": {
         "training": {
-          "signals": 306,
-          "positive_fraction": 0.595,
-          "average_return_pct": 0.75,
-          "average_excess_vs_spy_pct": 0.34
+          "signals": 235,
+          "positive_fraction": 0.574,
+          "average_return_pct": 1.21,
+          "average_excess_vs_spy_pct": 0.79
         },
         "holdout": {
-          "signals": 41,
-          "positive_fraction": 0.634,
-          "average_return_pct": 1.25,
-          "average_excess_vs_spy_pct": 1.28
+          "signals": 42,
+          "positive_fraction": 0.429,
+          "average_return_pct": -0.89,
+          "average_excess_vs_spy_pct": -0.56
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-11",
+      "as_of": "2026-11-12",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 3,
       "news": {
@@ -123,52 +123,52 @@
         "count": 12,
         "lexicon_balance": 1,
         "headlines": [
-          "GE Aerospace (GE) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "GE Vernova Could Withstand a Slowing AI Spending Boom, Says J.P. Morgan - Barron's",
-          "GE Aerospace stock outperforms competitors on strong trading day - MarketWatch"
+          "Texas Instruments (TXN) Stock Looks Fully Valued After Fresh Embedded AI News - Yahoo! Finance Canada",
+          "Texas Instruments (NASDAQ:TXN): A Quality Dividend Stock for Income Investors - ChartMill",
+          "Will Texas Instruments' 2027 Pricing Strategy Lift Profitability? - TradingView"
         ]
       },
       "institutional": {
-        "form4_count_90d": 4,
-        "latest_filed": "2026-11-05",
-        "cik": "0000040545",
+        "form4_count_90d": 7,
+        "latest_filed": "2026-10-30",
+        "cik": "0000097476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     {
       "ticker": "LLY",
-      "price": 1437.29,
-      "momentum_5d_pct": 1.36,
-      "trend_20d_pct": 18.91,
-      "volatility_20d_pct": 39.31,
-      "liquidity_usd": 4139861024,
+      "price": 1427.28,
+      "momentum_5d_pct": 4.58,
+      "trend_20d_pct": 14.04,
+      "volatility_20d_pct": 38.4,
+      "liquidity_usd": 4076970328,
       "validation": {
         "training": {
-          "signals": 243,
-          "positive_fraction": 0.601,
-          "average_return_pct": 0.41,
-          "average_excess_vs_spy_pct": 0.1
+          "signals": 244,
+          "positive_fraction": 0.602,
+          "average_return_pct": 0.43,
+          "average_excess_vs_spy_pct": 0.12
         },
         "holdout": {
-          "signals": 64,
-          "positive_fraction": 0.562,
-          "average_return_pct": 1.07,
-          "average_excess_vs_spy_pct": 0.89
+          "signals": 63,
+          "positive_fraction": 0.556,
+          "average_return_pct": 0.99,
+          "average_excess_vs_spy_pct": 0.82
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-11",
+      "as_of": "2026-11-12",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 4,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 2,
+        "lexicon_balance": -2,
         "headlines": [
-          "4 stocks to watch on Wednesday: LLY, BABA, PYPL, and NVDA (SP500:) - Seeking Alpha",
-          "S&P 500 After-Hours Movers: MNST, RDDT Among Gainers; VEEV, LLY Among Losers in Latest Session - ChartMill",
-          "Former Eli Lilly Sales Rep Sues Over Mounjaro Marketing; LLY Sto - GuruFocus"
+          "Jefferies Raised Its Eli Lilly (LLY) Target to $1,700. Here\u2019s What the Firm Is Counting On - Yahoo Finance",
+          "Is Eli Lilly Stock Ready If Factory Bills Outrun Its Cash? - Trefis",
+          "Can LLY's Expanding Obesity Pipeline Sustain Its GLP-1 Leadership? - The Globe and Mail"
         ]
       },
       "institutional": {
@@ -179,45 +179,45 @@
       }
     },
     {
-      "ticker": "PEP",
-      "price": 143.94,
-      "momentum_5d_pct": 1.07,
-      "trend_20d_pct": 11.35,
-      "volatility_20d_pct": 26.89,
-      "liquidity_usd": 1341340712,
+      "ticker": "GE",
+      "price": 330.86,
+      "momentum_5d_pct": 5.13,
+      "trend_20d_pct": 6.04,
+      "volatility_20d_pct": 44.71,
+      "liquidity_usd": 1748548025,
       "validation": {
         "training": {
-          "signals": 176,
-          "positive_fraction": 0.398,
-          "average_return_pct": -0.22,
-          "average_excess_vs_spy_pct": -0.36
+          "signals": 306,
+          "positive_fraction": 0.595,
+          "average_return_pct": 0.75,
+          "average_excess_vs_spy_pct": 0.34
         },
         "holdout": {
-          "signals": 26,
-          "positive_fraction": 0.462,
-          "average_return_pct": -0.43,
-          "average_excess_vs_spy_pct": -0.5
+          "signals": 42,
+          "positive_fraction": 0.643,
+          "average_return_pct": 1.34,
+          "average_excess_vs_spy_pct": 1.29
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-11",
+      "as_of": "2026-11-12",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 5,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": -2,
+        "lexicon_balance": 1,
         "headlines": [
-          "PepsiCo Stock Outlook: Is Wall Street Bullish or Bearish? - Yahoo Finance",
-          "PEP Stock Heads For Worst Month Since May: PepsiCo Commits $1B To Colombia Expansion, Targets Higher Prices Ahead Of Q3 Earnings - Stocktwits",
-          "PepsiCo Stock Nearly Erases Its 2026 Loss as 1,000 Job Cuts Loom - BeInCrypto"
+          "GE Aerospace stock underperforms Thursday when compared to competitors - MarketWatch",
+          "GE Aerospace stock slips as overbought Stoch RSI warns of a short-term correction - Traders Union",
+          "GE Aerospace vs Rolls-Royce shares: which is the better growth stock? - Yahoo Finance UK"
         ]
       },
       "institutional": {
-        "form4_count_90d": 14,
-        "latest_filed": "2026-10-23",
-        "cik": "0000077476",
+        "form4_count_90d": 5,
+        "latest_filed": "2026-11-12",
+        "cik": "0000040545",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     }
@@ -227,10 +227,10 @@
     "status": "exploratory_only",
     "target": "NVDA daily returns",
     "predictor": "San Diego daily mean temperature",
-    "observations": 248,
+    "observations": 249,
     "lag_days": 1,
-    "correlation": -0.0336,
-    "max_lag_permutation_p": 0.9222,
+    "correlation": -0.0388,
+    "max_lag_permutation_p": 0.8663,
     "permutations": 500,
     "warning": "Illustrative exploratory test; no independent holdout, seasonality controls, or causal evidence. Not quantum entanglement and not used in rankings."
   },
@@ -249,16 +249,16 @@
         "cik": "0001596532",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
-      "COST": {
-        "form4_count_90d": 28,
-        "latest_filed": "2026-10-27",
-        "cik": "0000909832",
+      "AVGO": {
+        "form4_count_90d": 3,
+        "latest_filed": "2026-09-25",
+        "cik": "0001730168",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
-      "GE": {
-        "form4_count_90d": 4,
-        "latest_filed": "2026-11-05",
-        "cik": "0000040545",
+      "TXN": {
+        "form4_count_90d": 7,
+        "latest_filed": "2026-10-30",
+        "cik": "0000097476",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "LLY": {
@@ -267,10 +267,10 @@
         "cik": "0000059478",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
-      "PEP": {
-        "form4_count_90d": 14,
-        "latest_filed": "2026-10-23",
-        "cik": "0000077476",
+      "GE": {
+        "form4_count_90d": 5,
+        "latest_filed": "2026-11-12",
+        "cik": "0000040545",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
@@ -278,27 +278,27 @@
   },
   "performance": {
     "status": "tracking",
-    "signal_days": 6,
+    "signal_days": 7,
     "summary": {
       "2": {
-        "observations": 15,
-        "average_net_pct": 0.779,
-        "average_excess_vs_spy_pct": -1.094,
-        "positive_fraction": 0.6
+        "observations": 20,
+        "average_net_pct": 0.38,
+        "average_excess_vs_spy_pct": -1.266,
+        "positive_fraction": 0.5
       },
       "5": {
-        "observations": 0,
-        "average_net_pct": null,
-        "average_excess_vs_spy_pct": null,
-        "positive_fraction": null
+        "observations": 5,
+        "average_net_pct": 0.309,
+        "average_excess_vs_spy_pct": -2.982,
+        "positive_fraction": 0.2
       }
     },
     "cohorts": {
       "2": {
-        "completed_cohorts": 3,
-        "average_basket_net_pct": 0.779,
-        "average_basket_excess_pct": -1.094,
-        "positive_cohort_fraction": 1,
+        "completed_cohorts": 4,
+        "average_basket_net_pct": 0.38,
+        "average_basket_excess_pct": -1.266,
+        "positive_cohort_fraction": 0.75,
         "uncertainty_95_pct": null,
         "cohorts": [
           {
@@ -318,110 +318,107 @@
             "basket_net_pct": 1.0528,
             "benchmark_pct": 0.946,
             "excess_pct": 0.1068
+          },
+          {
+            "signal_date": "2026-11-09",
+            "basket_net_pct": -0.8188,
+            "benchmark_pct": 0.96,
+            "excess_pct": -1.7788
           }
         ],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
       },
       "5": {
-        "completed_cohorts": 0,
-        "average_basket_net_pct": null,
-        "average_basket_excess_pct": null,
-        "positive_cohort_fraction": null,
+        "completed_cohorts": 1,
+        "average_basket_net_pct": 0.309,
+        "average_basket_excess_pct": -2.982,
+        "positive_cohort_fraction": 1,
         "uncertainty_95_pct": null,
-        "cohorts": [],
+        "cohorts": [
+          {
+            "signal_date": "2026-11-04",
+            "basket_net_pct": 0.3088,
+            "benchmark_pct": 3.291,
+            "excess_pct": -2.982
+          }
+        ],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
       }
     },
     "risk": {
       "2": {
-        "completed_cohorts": 3,
-        "negative_fraction": 0.0,
-        "worst_net_pct": 0.444,
+        "completed_cohorts": 4,
+        "negative_fraction": 0.25,
+        "worst_net_pct": -0.819,
         "cost_sensitivity": [
           {
             "round_trip_bps": 5,
-            "mean_basket_net_pct": 0.829,
-            "mean_excess_vs_spy_pct": -1.045
+            "mean_basket_net_pct": 0.43,
+            "mean_excess_vs_spy_pct": -1.216
           },
           {
             "round_trip_bps": 10,
-            "mean_basket_net_pct": 0.779,
-            "mean_excess_vs_spy_pct": -1.095
+            "mean_basket_net_pct": 0.38,
+            "mean_excess_vs_spy_pct": -1.266
           },
           {
             "round_trip_bps": 25,
-            "mean_basket_net_pct": 0.629,
-            "mean_excess_vs_spy_pct": -1.245
+            "mean_basket_net_pct": 0.23,
+            "mean_excess_vs_spy_pct": -1.416
           },
           {
             "round_trip_bps": 50,
-            "mean_basket_net_pct": 0.379,
-            "mean_excess_vs_spy_pct": -1.495
+            "mean_basket_net_pct": -0.02,
+            "mean_excess_vs_spy_pct": -1.666
           }
         ],
         "sequential_illustration": {
-          "cohorts": 1,
-          "total_return_pct": 0.444,
-          "max_drawdown_pct": 0.0,
-          "spy_total_return_pct": 2.686
+          "cohorts": 2,
+          "total_return_pct": -0.378,
+          "max_drawdown_pct": 0.819,
+          "spy_total_return_pct": 3.672
         },
         "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
       },
       "5": {
-        "completed_cohorts": 0,
-        "negative_fraction": null,
-        "worst_net_pct": null,
-        "cost_sensitivity": [],
+        "completed_cohorts": 1,
+        "negative_fraction": 0.0,
+        "worst_net_pct": 0.309,
+        "cost_sensitivity": [
+          {
+            "round_trip_bps": 5,
+            "mean_basket_net_pct": 0.359,
+            "mean_excess_vs_spy_pct": -2.932
+          },
+          {
+            "round_trip_bps": 10,
+            "mean_basket_net_pct": 0.309,
+            "mean_excess_vs_spy_pct": -2.982
+          },
+          {
+            "round_trip_bps": 25,
+            "mean_basket_net_pct": 0.159,
+            "mean_excess_vs_spy_pct": -3.132
+          },
+          {
+            "round_trip_bps": 50,
+            "mean_basket_net_pct": -0.091,
+            "mean_excess_vs_spy_pct": -3.382
+          }
+        ],
         "sequential_illustration": {
-          "cohorts": 0,
-          "total_return_pct": null,
-          "max_drawdown_pct": null,
-          "spy_total_return_pct": null
+          "cohorts": 1,
+          "total_return_pct": 0.309,
+          "max_drawdown_pct": 0.0,
+          "spy_total_return_pct": 3.291
         },
         "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
       }
     },
     "daily_marks": {
       "status": "descriptive",
-      "cohorts_with_marks": 5,
+      "cohorts_with_marks": 6,
       "recent_paths": [
-        {
-          "signal_date": "2026-11-04",
-          "strategy_id": "legacy-unversioned",
-          "complete": false,
-          "marks": [
-            {
-              "date": "2026-11-05",
-              "basket_net_pct": -0.1,
-              "spy_pct": 0.0,
-              "excess_pct": -0.1
-            },
-            {
-              "date": "2026-11-06",
-              "basket_net_pct": -1.067,
-              "spy_pct": 0.312,
-              "excess_pct": -1.379
-            },
-            {
-              "date": "2026-11-09",
-              "basket_net_pct": 0.445,
-              "spy_pct": 2.686,
-              "excess_pct": -2.242
-            },
-            {
-              "date": "2026-11-10",
-              "basket_net_pct": 0.756,
-              "spy_pct": 2.308,
-              "excess_pct": -1.552
-            },
-            {
-              "date": "2026-11-11",
-              "basket_net_pct": 1.045,
-              "spy_pct": 3.658,
-              "excess_pct": -2.613
-            }
-          ]
-        },
         {
           "signal_date": "2026-11-05",
           "strategy_id": "momentum-5-20-liquidity-v1",
@@ -450,6 +447,12 @@
               "basket_net_pct": 1.461,
               "spy_pct": 3.335,
               "excess_pct": -1.873
+            },
+            {
+              "date": "2026-11-12",
+              "basket_net_pct": 1.072,
+              "spy_pct": 2.969,
+              "excess_pct": -1.897
             }
           ]
         },
@@ -475,6 +478,12 @@
               "basket_net_pct": 1.053,
               "spy_pct": 0.946,
               "excess_pct": 0.107
+            },
+            {
+              "date": "2026-11-12",
+              "basket_net_pct": -0.227,
+              "spy_pct": 0.589,
+              "excess_pct": -0.816
             }
           ]
         },
@@ -491,9 +500,15 @@
             },
             {
               "date": "2026-11-11",
-              "basket_net_pct": -0.192,
+              "basket_net_pct": -0.191,
               "spy_pct": 1.319,
               "excess_pct": -1.51
+            },
+            {
+              "date": "2026-11-12",
+              "basket_net_pct": -0.819,
+              "spy_pct": 0.96,
+              "excess_pct": -1.779
             }
           ]
         },
@@ -504,6 +519,25 @@
           "marks": [
             {
               "date": "2026-11-11",
+              "basket_net_pct": -0.1,
+              "spy_pct": 0.0,
+              "excess_pct": -0.1
+            },
+            {
+              "date": "2026-11-12",
+              "basket_net_pct": -0.466,
+              "spy_pct": -0.354,
+              "excess_pct": -0.112
+            }
+          ]
+        },
+        {
+          "signal_date": "2026-11-11",
+          "strategy_id": "momentum-5-20-liquidity-v1",
+          "complete": false,
+          "marks": [
+            {
+              "date": "2026-11-12",
               "basket_net_pct": -0.1,
               "spy_pct": 0.0,
               "excess_pct": -0.1

@@ -15,6 +15,13 @@
               "net_pct": 0.894,
               "spy_pct": 2.686,
               "excess_net_pct": -1.792
+            },
+            "5": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -0.48,
+              "net_pct": -0.58,
+              "spy_pct": 3.291,
+              "excess_net_pct": -3.871
             }
           },
           "entry_date": "2026-11-05",
@@ -31,6 +38,13 @@
               "net_pct": -0.117,
               "spy_pct": 2.686,
               "excess_net_pct": -2.803
+            },
+            "5": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -0.506,
+              "net_pct": -0.606,
+              "spy_pct": 3.291,
+              "excess_net_pct": -3.897
             }
           },
           "entry_date": "2026-11-05",
@@ -47,6 +61,13 @@
               "net_pct": 3.36,
               "spy_pct": 2.686,
               "excess_net_pct": 0.674
+            },
+            "5": {
+              "exit_date": "2026-11-12",
+              "gross_pct": 4.583,
+              "net_pct": 4.483,
+              "spy_pct": 3.291,
+              "excess_net_pct": 1.193
             }
           },
           "entry_date": "2026-11-05",
@@ -63,6 +84,13 @@
               "net_pct": -1.713,
               "spy_pct": 2.686,
               "excess_net_pct": -4.399
+            },
+            "5": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -1.198,
+              "net_pct": -1.298,
+              "spy_pct": 3.291,
+              "excess_net_pct": -4.589
             }
           },
           "entry_date": "2026-11-05",
@@ -79,6 +107,13 @@
               "net_pct": -0.202,
               "spy_pct": 2.686,
               "excess_net_pct": -2.888
+            },
+            "5": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -0.355,
+              "net_pct": -0.455,
+              "spy_pct": 3.291,
+              "excess_net_pct": -3.746
             }
           },
           "entry_date": "2026-11-05",
@@ -320,7 +355,15 @@
         {
           "ticker": "HD",
           "rank": 1,
-          "outcomes": {},
+          "outcomes": {
+            "2": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -0.781,
+              "net_pct": -0.881,
+              "spy_pct": 0.96,
+              "excess_net_pct": -1.841
+            }
+          },
           "entry_date": "2026-11-10",
           "entry_price": 351.0,
           "benchmark_entry": 749.92
@@ -328,7 +371,15 @@
         {
           "ticker": "AMZN",
           "rank": 2,
-          "outcomes": {},
+          "outcomes": {
+            "2": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -1.266,
+              "net_pct": -1.366,
+              "spy_pct": 0.96,
+              "excess_net_pct": -2.326
+            }
+          },
           "entry_date": "2026-11-10",
           "entry_price": 270.87,
           "benchmark_entry": 749.92
@@ -336,7 +387,15 @@
         {
           "ticker": "GE",
           "rank": 3,
-          "outcomes": {},
+          "outcomes": {
+            "2": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -2.086,
+              "net_pct": -2.186,
+              "spy_pct": 0.96,
+              "excess_net_pct": -3.146
+            }
+          },
           "entry_date": "2026-11-10",
           "entry_price": 337.91,
           "benchmark_entry": 749.92
@@ -344,7 +403,15 @@
         {
           "ticker": "MSFT",
           "rank": 4,
-          "outcomes": {},
+          "outcomes": {
+            "2": {
+              "exit_date": "2026-11-12",
+              "gross_pct": -1.906,
+              "net_pct": -2.006,
+              "spy_pct": 0.96,
+              "excess_net_pct": -2.966
+            }
+          },
           "entry_date": "2026-11-10",
           "entry_price": 533.16,
           "benchmark_entry": 749.92
@@ -352,7 +419,15 @@
         {
           "ticker": "COST",
           "rank": 5,
-          "outcomes": {},
+          "outcomes": {
+            "2": {
+              "exit_date": "2026-11-12",
+              "gross_pct": 2.445,
+              "net_pct": 2.345,
+              "spy_pct": 0.96,
+              "excess_net_pct": 1.385
+            }
+          },
           "entry_date": "2026-11-10",
           "entry_price": 1066.14,
           "benchmark_entry": 749.92
@@ -448,15 +523,79 @@
         {
           "ticker": "ANET",
           "rank": 1,
-          "outcomes": {}
+          "outcomes": {},
+          "entry_date": "2026-11-12",
+          "entry_price": 206.63,
+          "benchmark_entry": 757.12
         },
         {
           "ticker": "COST",
           "rank": 2,
-          "outcomes": {}
+          "outcomes": {},
+          "entry_date": "2026-11-12",
+          "entry_price": 1092.21,
+          "benchmark_entry": 757.12
         },
         {
           "ticker": "GE",
+          "rank": 3,
+          "outcomes": {},
+          "entry_date": "2026-11-12",
+          "entry_price": 330.86,
+          "benchmark_entry": 757.12
+        },
+        {
+          "ticker": "LLY",
+          "rank": 4,
+          "outcomes": {},
+          "entry_date": "2026-11-12",
+          "entry_price": 1427.28,
+          "benchmark_entry": 757.12
+        },
+        {
+          "ticker": "PEP",
+          "rank": 5,
+          "outcomes": {},
+          "entry_date": "2026-11-12",
+          "entry_price": 142.26,
+          "benchmark_entry": 757.12
+        }
+      ]
+    },
+    {
+      "signal_date": "2026-11-12",
+      "captured_at": "2026-11-12T23:11:08.813819+00:00",
+      "strategy": {
+        "strategy_id": "momentum-5-20-liquidity-v1",
+        "rules_hash": "5971968409d81e4d",
+        "decision_timestamp_utc": "2026-11-12T23:10:55.160967+00:00",
+        "price_as_of": "2026-11-12",
+        "rules": {
+          "universe": "fixed 40-stock starter universe",
+          "min_price": 5,
+          "min_dollar_volume_20d": 20000000,
+          "min_mom5_pct": 0,
+          "min_mom20_pct": 0,
+          "max_annual_vol_pct": 90,
+          "rank": "mom5+.3*mom20-.04*annual_vol",
+          "cost_bps": 10,
+          "entry": "next common session adjusted close"
+        },
+        "warning": "Recorded on first successful scan for a session, not a contemporaneous exchange execution timestamp."
+      },
+      "picks": [
+        {
+          "ticker": "ANET",
+          "rank": 1,
+          "outcomes": {}
+        },
+        {
+          "ticker": "AVGO",
+          "rank": 2,
+          "outcomes": {}
+        },
+        {
+          "ticker": "TXN",
           "rank": 3,
           "outcomes": {}
         },
@@ -466,35 +605,35 @@
           "outcomes": {}
         },
         {
-          "ticker": "PEP",
+          "ticker": "GE",
           "rank": 5,
           "outcomes": {}
         }
       ]
     }
   ],
-  "updated_at": "2026-11-11T23:17:47.197482+00:00",
+  "updated_at": "2026-11-12T23:11:08.813837+00:00",
   "method": "Signals recorded after closing data; next common session adjusted close is hypothetical entry; 2/5 subsequent sessions, 10 bps illustrative round-trip cost; no execution.",
   "summary": {
     "2": {
-      "observations": 15,
-      "average_net_pct": 0.779,
-      "average_excess_vs_spy_pct": -1.094,
-      "positive_fraction": 0.6
+      "observations": 20,
+      "average_net_pct": 0.38,
+      "average_excess_vs_spy_pct": -1.266,
+      "positive_fraction": 0.5
     },
     "5": {
-      "observations": 0,
-      "average_net_pct": null,
-      "average_excess_vs_spy_pct": null,
-      "positive_fraction": null
+      "observations": 5,
+      "average_net_pct": 0.309,
+      "average_excess_vs_spy_pct": -2.982,
+      "positive_fraction": 0.2
     }
   },
   "cohorts": {
     "2": {
-      "completed_cohorts": 3,
-      "average_basket_net_pct": 0.779,
-      "average_basket_excess_pct": -1.094,
-      "positive_cohort_fraction": 1,
+      "completed_cohorts": 4,
+      "average_basket_net_pct": 0.38,
+      "average_basket_excess_pct": -1.266,
+      "positive_cohort_fraction": 0.75,
       "uncertainty_95_pct": null,
       "cohorts": [
         {
@@ -514,65 +653,99 @@
           "basket_net_pct": 1.0528,
           "benchmark_pct": 0.946,
           "excess_pct": 0.1068
+        },
+        {
+          "signal_date": "2026-11-09",
+          "basket_net_pct": -0.8188,
+          "benchmark_pct": 0.96,
+          "excess_pct": -1.7788
         }
       ],
       "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
     },
     "5": {
-      "completed_cohorts": 0,
-      "average_basket_net_pct": null,
-      "average_basket_excess_pct": null,
-      "positive_cohort_fraction": null,
+      "completed_cohorts": 1,
+      "average_basket_net_pct": 0.309,
+      "average_basket_excess_pct": -2.982,
+      "positive_cohort_fraction": 1,
       "uncertainty_95_pct": null,
-      "cohorts": [],
+      "cohorts": [
+        {
+          "signal_date": "2026-11-04",
+          "basket_net_pct": 0.3088,
+          "benchmark_pct": 3.291,
+          "excess_pct": -2.982
+        }
+      ],
       "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
     }
   },
   "risk": {
     "2": {
-      "completed_cohorts": 3,
-      "negative_fraction": 0.0,
-      "worst_net_pct": 0.444,
+      "completed_cohorts": 4,
+      "negative_fraction": 0.25,
+      "worst_net_pct": -0.819,
       "cost_sensitivity": [
         {
           "round_trip_bps": 5,
-          "mean_basket_net_pct": 0.829,
-          "mean_excess_vs_spy_pct": -1.045
+          "mean_basket_net_pct": 0.43,
+          "mean_excess_vs_spy_pct": -1.216
         },
         {
           "round_trip_bps": 10,
-          "mean_basket_net_pct": 0.779,
-          "mean_excess_vs_spy_pct": -1.095
+          "mean_basket_net_pct": 0.38,
+          "mean_excess_vs_spy_pct": -1.266
         },
         {
           "round_trip_bps": 25,
-          "mean_basket_net_pct": 0.629,
-          "mean_excess_vs_spy_pct": -1.245
+          "mean_basket_net_pct": 0.23,
+          "mean_excess_vs_spy_pct": -1.416
         },
         {
           "round_trip_bps": 50,
-          "mean_basket_net_pct": 0.379,
-          "mean_excess_vs_spy_pct": -1.495
+          "mean_basket_net_pct": -0.02,
+          "mean_excess_vs_spy_pct": -1.666
         }
       ],
       "sequential_illustration": {
-        "cohorts": 1,
-        "total_return_pct": 0.444,
-        "max_drawdown_pct": 0.0,
-        "spy_total_return_pct": 2.686
+        "cohorts": 2,
+        "total_return_pct": -0.378,
+        "max_drawdown_pct": 0.819,
+        "spy_total_return_pct": 3.672
       },
       "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
     },
     "5": {
-      "completed_cohorts": 0,
-      "negative_fraction": null,
-      "worst_net_pct": null,
-      "cost_sensitivity": [],
+      "completed_cohorts": 1,
+      "negative_fraction": 0.0,
+      "worst_net_pct": 0.309,
+      "cost_sensitivity": [
+        {
+          "round_trip_bps": 5,
+          "mean_basket_net_pct": 0.359,
+          "mean_excess_vs_spy_pct": -2.932
+        },
+        {
+          "round_trip_bps": 10,
+          "mean_basket_net_pct": 0.309,
+          "mean_excess_vs_spy_pct": -2.982
+        },
+        {
+          "round_trip_bps": 25,
+          "mean_basket_net_pct": 0.159,
+          "mean_excess_vs_spy_pct": -3.132
+        },
+        {
+          "round_trip_bps": 50,
+          "mean_basket_net_pct": -0.091,
+          "mean_excess_vs_spy_pct": -3.382
+        }
+      ],
       "sequential_illustration": {
-        "cohorts": 0,
-        "total_return_pct": null,
-        "max_drawdown_pct": null,
-        "spy_total_return_pct": null
+        "cohorts": 1,
+        "total_return_pct": 0.309,
+        "max_drawdown_pct": 0.0,
+        "spy_total_return_pct": 3.291
       },
       "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
     }
@@ -583,7 +756,7 @@
       {
         "signal_date": "2026-11-04",
         "strategy_id": "legacy-unversioned",
-        "complete": false,
+        "complete": true,
         "marks": [
           {
             "date": "2026-11-05",
@@ -614,6 +787,12 @@
             "basket_net_pct": 1.045,
             "spy_pct": 3.658,
             "excess_pct": -2.613
+          },
+          {
+            "date": "2026-11-12",
+            "basket_net_pct": 0.309,
+            "spy_pct": 3.291,
+            "excess_pct": -2.982
           }
         ]
       },
@@ -645,6 +824,12 @@
             "basket_net_pct": 1.461,
             "spy_pct": 3.335,
             "excess_pct": -1.873
+          },
+          {
+            "date": "2026-11-12",
+            "basket_net_pct": 1.072,
+            "spy_pct": 2.969,
+            "excess_pct": -1.897
           }
         ]
       },
@@ -670,6 +855,12 @@
             "basket_net_pct": 1.053,
             "spy_pct": 0.946,
             "excess_pct": 0.107
+          },
+          {
+            "date": "2026-11-12",
+            "basket_net_pct": -0.227,
+            "spy_pct": 0.589,
+            "excess_pct": -0.816
           }
         ]
       },
@@ -686,9 +877,15 @@
           },
           {
             "date": "2026-11-11",
-            "basket_net_pct": -0.192,
+            "basket_net_pct": -0.191,
             "spy_pct": 1.319,
             "excess_pct": -1.51
+          },
+          {
+            "date": "2026-11-12",
+            "basket_net_pct": -0.819,
+            "spy_pct": 0.96,
+            "excess_pct": -1.779
           }
         ]
       },
@@ -702,11 +899,30 @@
             "basket_net_pct": -0.1,
             "spy_pct": 0.0,
             "excess_pct": -0.1
+          },
+          {
+            "date": "2026-11-12",
+            "basket_net_pct": -0.466,
+            "spy_pct": -0.354,
+            "excess_pct": -0.112
+          }
+        ]
+      },
+      {
+        "signal_date": "2026-11-11",
+        "strategy_id": "momentum-5-20-liquidity-v1",
+        "complete": false,
+        "marks": [
+          {
+            "date": "2026-11-12",
+            "basket_net_pct": -0.1,
+            "spy_pct": 0.0,
+            "excess_pct": -0.1
           }
         ]
       }
     ],
-    "cohorts_with_marks": 5,
+    "cohorts_with_marks": 6,
     "note": "Each path independently tracks a five-stock equal-weight cohort; overlaps are not consolidated into a cash-constrained account. Next-session close is hypothetical. Cost is applied to each liquidation mark."
   }
 }
