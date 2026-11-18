@@ -1,35 +1,35 @@
 {
   "version": 10,
   "status": "ok",
-  "generated_at": "2026-11-17T23:19:59.746420+00:00",
-  "price_as_of": "2026-11-17",
+  "generated_at": "2026-11-18T23:17:56.405182+00:00",
+  "price_as_of": "2026-11-18",
   "universe_size": 40,
   "method": "price momentum, liquidity, volatility; time-ordered holdout vs SPY",
   "picks": [
     {
       "ticker": "COST",
-      "price": 1110.08,
-      "momentum_5d_pct": 4.12,
-      "trend_20d_pct": 11.77,
-      "volatility_20d_pct": 22.75,
-      "liquidity_usd": 2569096398,
+      "price": 1096.62,
+      "momentum_5d_pct": 0.83,
+      "trend_20d_pct": 10.01,
+      "volatility_20d_pct": 23.61,
+      "liquidity_usd": 2628936694,
       "validation": {
         "training": {
-          "signals": 258,
-          "positive_fraction": 0.581,
-          "average_return_pct": 0.17,
-          "average_excess_vs_spy_pct": -0.38
+          "signals": 259,
+          "positive_fraction": 0.579,
+          "average_return_pct": 0.14,
+          "average_excess_vs_spy_pct": -0.42
         },
         "holdout": {
           "signals": 38,
-          "positive_fraction": 0.632,
-          "average_return_pct": 1.21,
-          "average_excess_vs_spy_pct": 1.01
+          "positive_fraction": 0.658,
+          "average_return_pct": 1.47,
+          "average_excess_vs_spy_pct": 1.42
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 1,
       "news": {
@@ -37,9 +37,9 @@
         "count": 12,
         "lexicon_balance": 4,
         "headlines": [
-          "Anthropic IPO: Stock price revealed tomorrow, will begin trading Nov. 19 - Yahoo Finance",
-          "Nvidia shares set for $335 billion swing after earnings, options show - Reuters",
-          "Ro Khanna: Trump team turned a 'blind eye' to keep Nvidia stock price up - USA Today"
+          "Costco (COST) Stock Could Be Above Fair Value Despite Its Record $30 Dividend - Yahoo Finance",
+          "Costco (COST) Declines More Than Market: Some Information for Investors - Yahoo Finance",
+          "Disney earnings beat estimates as Bank of America raises price target to $135 - Yahoo Finance"
         ]
       },
       "institutional": {
@@ -51,11 +51,11 @@
     },
     {
       "ticker": "WMT",
-      "price": 127.52,
-      "momentum_5d_pct": 1.57,
-      "trend_20d_pct": 8.21,
-      "volatility_20d_pct": 25.75,
-      "liquidity_usd": 2714325084,
+      "price": 127.36,
+      "momentum_5d_pct": 1.34,
+      "trend_20d_pct": 8.12,
+      "volatility_20d_pct": 25.77,
+      "liquidity_usd": 2788459418,
       "validation": {
         "training": {
           "signals": 302,
@@ -72,17 +72,17 @@
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 2,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 0,
+        "lexicon_balance": 1,
         "headlines": [
-          "Here\u2019s How Much Traders Expect Walmart Stock to Move After Earnings Thursday - Yahoo Finance",
-          "Dow Jones Discount Retail Giant Walmart Poised To Hit Buy Point With Earnings Due - Investor's Business Daily",
-          "Walmart's Q3 Earnings on Deck: Is WMT Stock a Buy or Hold? - Zacks Investment Research"
+          "Pricey Walmart Stock Falls More Often, Not Harder - Yahoo Finance",
+          "Should You Buy Walmart Stock Before Nov. 19? History Has a Clear Answer. - The Motley Fool",
+          "Ahead of Walmart Earnings, Here's What Barchart Data Says Comes Next for WMT Stock - Barchart.com"
         ]
       },
       "institutional": {
@@ -94,97 +94,54 @@
     },
     {
       "ticker": "KO",
-      "price": 98.79,
-      "momentum_5d_pct": 1.94,
-      "trend_20d_pct": 5.67,
-      "volatility_20d_pct": 20.75,
-      "liquidity_usd": 1769172582,
+      "price": 98.09,
+      "momentum_5d_pct": 0.53,
+      "trend_20d_pct": 5.84,
+      "volatility_20d_pct": 20.65,
+      "liquidity_usd": 1780566712,
       "validation": {
         "training": {
-          "signals": 252,
-          "positive_fraction": 0.536,
-          "average_return_pct": 0.38,
-          "average_excess_vs_spy_pct": -0.02
+          "signals": 253,
+          "positive_fraction": 0.534,
+          "average_return_pct": 0.37,
+          "average_excess_vs_spy_pct": -0.04
         },
         "holdout": {
           "signals": 59,
-          "positive_fraction": 0.525,
-          "average_return_pct": 0.5,
-          "average_excess_vs_spy_pct": -0.04
+          "positive_fraction": 0.542,
+          "average_return_pct": 0.55,
+          "average_excess_vs_spy_pct": 0.11
         },
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
       "rank": 3,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 2,
+        "lexicon_balance": 1,
         "headlines": [
-          "Coca-Cola Stock Price \u2014 KO Chart - TradingView",
-          "Does Coca-Cola Stock Fit Your Portfolio Risk? - Trefis",
-          "The Coca-Cola Company (KO) stock price, news, quote and history - Yahoo Finance Singapore"
+          "How Analyst Backing Will Impact Coca Cola (KO) Stock - Yahoo Finance UK",
+          "Coca-Cola vs. Monster Beverage: Which Consumer Goods Stock Is a Better Buy for 2027? - The Motley Fool",
+          "If You Invest $5,000 in Coca Cola Today, Here\u2019s What It Could Be Worth by 2030 - 24/7 Wall St."
         ]
       },
       "institutional": {
-        "form4_count_90d": 5,
-        "latest_filed": "2026-11-13",
+        "form4_count_90d": 7,
+        "latest_filed": "2026-11-18",
         "cik": "0000021344",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     {
-      "ticker": "AAPL",
-      "price": 351.91,
-      "momentum_5d_pct": 1.05,
-      "trend_20d_pct": 3.73,
-      "volatility_20d_pct": 27.86,
-      "liquidity_usd": 16628022962,
-      "validation": {
-        "training": {
-          "signals": 242,
-          "positive_fraction": 0.537,
-          "average_return_pct": 0.4,
-          "average_excess_vs_spy_pct": 0.17
-        },
-        "holdout": {
-          "signals": 60,
-          "positive_fraction": 0.567,
-          "average_return_pct": -0.0,
-          "average_excess_vs_spy_pct": 0.17
-        },
-        "holdout_sessions": 120,
-        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
-      },
-      "as_of": "2026-11-17",
-      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 4,
-      "news": {
-        "status": "context_only",
-        "count": 12,
-        "lexicon_balance": 0,
-        "headlines": [
-          "Apple Inc. (AAPL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "Dear Apple Stock Fans, Mark Your Calendars for June 2027 - Barchart.com",
-          "Why Apple is down in a week of outages from Microsoft to Chase - Yahoo Finance"
-        ]
-      },
-      "institutional": {
-        "form4_count_90d": 26,
-        "latest_filed": "2026-11-12",
-        "cik": "0000320193",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      }
-    },
-    {
       "ticker": "AVGO",
-      "price": 341.6,
-      "momentum_5d_pct": 2.9,
-      "trend_20d_pct": 2.16,
-      "volatility_20d_pct": 71.85,
-      "liquidity_usd": 9173137260,
+      "price": 354.05,
+      "momentum_5d_pct": 2.56,
+      "trend_20d_pct": 4.81,
+      "volatility_20d_pct": 72.85,
+      "liquidity_usd": 9350244711,
       "validation": {
         "training": {
           "signals": 237,
@@ -201,23 +158,66 @@
         "holdout_sessions": 120,
         "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
       },
-      "as_of": "2026-11-17",
+      "as_of": "2026-11-18",
       "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
-      "rank": 5,
+      "rank": 4,
       "news": {
         "status": "context_only",
         "count": 12,
-        "lexicon_balance": 1,
+        "lexicon_balance": 5,
         "headlines": [
-          "Prediction: This Will Be Broadcom\u2019s Stock Price by the End of 2028 - Yahoo Finance",
-          "AMD, Broadcom, and TSMC stocks rise on Nvidia earnings beat - Yahoo Finance",
-          "What's Going On With Broadcom Stock Monday? - Benzinga"
+          "AMD, Broadcom, CoreWeave stocks mixed on Nvidia Q3 earnings beat - Yahoo Finance",
+          "Why Is Broadcom Stock Gaining Wednesday? - Benzinga",
+          "How Broadcom\u2019s (AVGO) Anthropic Equipment Leases Link AI Growth to Financing - Yahoo Finance"
         ]
       },
       "institutional": {
         "form4_count_90d": 3,
         "latest_filed": "2026-09-25",
         "cik": "0001730168",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      }
+    },
+    {
+      "ticker": "AMZN",
+      "price": 267.74,
+      "momentum_5d_pct": 0.59,
+      "trend_20d_pct": 2.05,
+      "volatility_20d_pct": 42.46,
+      "liquidity_usd": 12876151059,
+      "validation": {
+        "training": {
+          "signals": 264,
+          "positive_fraction": 0.595,
+          "average_return_pct": 0.67,
+          "average_excess_vs_spy_pct": 0.18
+        },
+        "holdout": {
+          "signals": 36,
+          "positive_fraction": 0.306,
+          "average_return_pct": -2.63,
+          "average_excess_vs_spy_pct": -2.3
+        },
+        "holdout_sessions": 120,
+        "method": "time-ordered historical holdout, overlapping 5-session forward returns; descriptive, not statistically independent"
+      },
+      "as_of": "2026-11-18",
+      "rationale": "Qualified price trend and liquidity filters; historical holdout evidence is descriptive and may not generalize.",
+      "rank": 5,
+      "news": {
+        "status": "context_only",
+        "count": 12,
+        "lexicon_balance": -1,
+        "headlines": [
+          "Should You Buy Amazon Stock Before the Holiday Season? - Yahoo Finance",
+          "Why is Amazon stock climbing today? - Investing.com",
+          "Amazon and Alphabet Will Own Over 28% of Anthropic After Its IPO. Here\u2019s What That Means for Their Stocks. - The Motley Fool"
+        ]
+      },
+      "institutional": {
+        "form4_count_90d": 20,
+        "latest_filed": "2026-11-17",
+        "cik": "0001018724",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     }
@@ -227,10 +227,10 @@
     "status": "exploratory_only",
     "target": "NVDA daily returns",
     "predictor": "San Diego daily mean temperature",
-    "observations": 247,
+    "observations": 248,
     "lag_days": 1,
-    "correlation": -0.0501,
-    "max_lag_permutation_p": 0.8383,
+    "correlation": -0.0482,
+    "max_lag_permutation_p": 0.8343,
     "permutations": 500,
     "warning": "Illustrative exploratory test; no independent holdout, seasonality controls, or causal evidence. Not quantum entanglement and not used in rankings."
   },
@@ -256,15 +256,9 @@
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "KO": {
-        "form4_count_90d": 5,
-        "latest_filed": "2026-11-13",
+        "form4_count_90d": 7,
+        "latest_filed": "2026-11-18",
         "cik": "0000021344",
-        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
-      },
-      "AAPL": {
-        "form4_count_90d": 26,
-        "latest_filed": "2026-11-12",
-        "cik": "0000320193",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       },
       "AVGO": {
@@ -272,33 +266,39 @@
         "latest_filed": "2026-09-25",
         "cik": "0001730168",
         "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
+      },
+      "AMZN": {
+        "form4_count_90d": 20,
+        "latest_filed": "2026-11-17",
+        "cik": "0001018724",
+        "note": "Form 4 filing counts are NOT insider purchases; filings can include sales, awards and other transactions."
       }
     },
     "message": "Public disclosure filing counts; never included in ranking."
   },
   "performance": {
     "status": "tracking",
-    "signal_days": 10,
+    "signal_days": 11,
     "summary": {
       "2": {
-        "observations": 35,
-        "average_net_pct": -0.295,
-        "average_excess_vs_spy_pct": -0.394,
-        "positive_fraction": 0.486
+        "observations": 40,
+        "average_net_pct": -0.163,
+        "average_excess_vs_spy_pct": -0.084,
+        "positive_fraction": 0.475
       },
       "5": {
-        "observations": 20,
-        "average_net_pct": 0.142,
-        "average_excess_vs_spy_pct": -0.324,
-        "positive_fraction": 0.45
+        "observations": 25,
+        "average_net_pct": -0.21,
+        "average_excess_vs_spy_pct": 0.197,
+        "positive_fraction": 0.44
       }
     },
     "cohorts": {
       "2": {
-        "completed_cohorts": 7,
-        "average_basket_net_pct": -0.295,
-        "average_basket_excess_pct": -0.394,
-        "positive_cohort_fraction": 0.571,
+        "completed_cohorts": 8,
+        "average_basket_net_pct": -0.163,
+        "average_basket_excess_pct": -0.084,
+        "positive_cohort_fraction": 0.625,
         "uncertainty_95_pct": null,
         "cohorts": [
           {
@@ -342,15 +342,21 @@
             "basket_net_pct": -2.7368,
             "benchmark_pct": -2.907,
             "excess_pct": 0.1702
+          },
+          {
+            "signal_date": "2026-11-13",
+            "basket_net_pct": 0.767,
+            "benchmark_pct": -1.318,
+            "excess_pct": 2.0846
           }
         ],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
       },
       "5": {
-        "completed_cohorts": 4,
-        "average_basket_net_pct": 0.142,
-        "average_basket_excess_pct": -0.324,
-        "positive_cohort_fraction": 0.75,
+        "completed_cohorts": 5,
+        "average_basket_net_pct": -0.21,
+        "average_basket_excess_pct": 0.197,
+        "positive_cohort_fraction": 0.6,
         "uncertainty_95_pct": null,
         "cohorts": [
           {
@@ -376,6 +382,12 @@
             "basket_net_pct": -2.6084,
             "benchmark_pct": -2.331,
             "excess_pct": -0.2774
+          },
+          {
+            "signal_date": "2026-11-10",
+            "basket_net_pct": -1.6178,
+            "benchmark_pct": -3.897,
+            "excess_pct": 2.2792
           }
         ],
         "note": "Each signal-date basket is equal-weighted; baskets can overlap in time. No capital allocation or compounded equity curve."
@@ -383,29 +395,29 @@
     },
     "risk": {
       "2": {
-        "completed_cohorts": 7,
-        "negative_fraction": 0.429,
+        "completed_cohorts": 8,
+        "negative_fraction": 0.375,
         "worst_net_pct": -2.737,
         "cost_sensitivity": [
           {
             "round_trip_bps": 5,
-            "mean_basket_net_pct": -0.245,
-            "mean_excess_vs_spy_pct": -0.344
+            "mean_basket_net_pct": -0.113,
+            "mean_excess_vs_spy_pct": -0.034
           },
           {
             "round_trip_bps": 10,
-            "mean_basket_net_pct": -0.295,
-            "mean_excess_vs_spy_pct": -0.394
+            "mean_basket_net_pct": -0.163,
+            "mean_excess_vs_spy_pct": -0.084
           },
           {
             "round_trip_bps": 25,
-            "mean_basket_net_pct": -0.445,
-            "mean_excess_vs_spy_pct": -0.544
+            "mean_basket_net_pct": -0.313,
+            "mean_excess_vs_spy_pct": -0.234
           },
           {
             "round_trip_bps": 50,
-            "mean_basket_net_pct": -0.695,
-            "mean_excess_vs_spy_pct": -0.794
+            "mean_basket_net_pct": -0.563,
+            "mean_excess_vs_spy_pct": -0.484
           }
         ],
         "sequential_illustration": {
@@ -417,29 +429,29 @@
         "note": "Cost assumptions are hypothetical. Sequential illustration skips overlapping cohorts and compounds selected completed baskets; not an executable portfolio or unbiased backtest."
       },
       "5": {
-        "completed_cohorts": 4,
-        "negative_fraction": 0.25,
+        "completed_cohorts": 5,
+        "negative_fraction": 0.4,
         "worst_net_pct": -2.608,
         "cost_sensitivity": [
           {
             "round_trip_bps": 5,
-            "mean_basket_net_pct": 0.192,
-            "mean_excess_vs_spy_pct": -0.274
+            "mean_basket_net_pct": -0.16,
+            "mean_excess_vs_spy_pct": 0.247
           },
           {
             "round_trip_bps": 10,
-            "mean_basket_net_pct": 0.142,
-            "mean_excess_vs_spy_pct": -0.324
+            "mean_basket_net_pct": -0.21,
+            "mean_excess_vs_spy_pct": 0.197
           },
           {
             "round_trip_bps": 25,
-            "mean_basket_net_pct": -0.008,
-            "mean_excess_vs_spy_pct": -0.474
+            "mean_basket_net_pct": -0.36,
+            "mean_excess_vs_spy_pct": 0.047
           },
           {
             "round_trip_bps": 50,
-            "mean_basket_net_pct": -0.258,
-            "mean_excess_vs_spy_pct": -0.724
+            "mean_basket_net_pct": -0.61,
+            "mean_excess_vs_spy_pct": -0.203
           }
         ],
         "sequential_illustration": {
@@ -453,45 +465,8 @@
     },
     "daily_marks": {
       "status": "descriptive",
-      "cohorts_with_marks": 9,
+      "cohorts_with_marks": 10,
       "recent_paths": [
-        {
-          "signal_date": "2026-11-10",
-          "strategy_id": "momentum-5-20-liquidity-v1",
-          "complete": false,
-          "marks": [
-            {
-              "date": "2026-11-11",
-              "basket_net_pct": -0.1,
-              "spy_pct": 0.0,
-              "excess_pct": -0.1
-            },
-            {
-              "date": "2026-11-12",
-              "basket_net_pct": -0.466,
-              "spy_pct": -0.354,
-              "excess_pct": -0.112
-            },
-            {
-              "date": "2026-11-13",
-              "basket_net_pct": 0.449,
-              "spy_pct": -0.716,
-              "excess_pct": 1.165
-            },
-            {
-              "date": "2026-11-16",
-              "basket_net_pct": -0.177,
-              "spy_pct": -2.614,
-              "excess_pct": 2.437
-            },
-            {
-              "date": "2026-11-17",
-              "basket_net_pct": -1.555,
-              "spy_pct": -3.602,
-              "excess_pct": 2.048
-            }
-          ]
-        },
         {
           "signal_date": "2026-11-11",
           "strategy_id": "momentum-5-20-liquidity-v1",
@@ -520,6 +495,12 @@
               "basket_net_pct": -2.173,
               "spy_pct": -3.26,
               "excess_pct": 1.087
+            },
+            {
+              "date": "2026-11-18",
+              "basket_net_pct": -2.07,
+              "spy_pct": -3.556,
+              "excess_pct": 1.486
             }
           ]
         },
@@ -545,6 +526,12 @@
               "basket_net_pct": -2.737,
               "spy_pct": -2.907,
               "excess_pct": 0.17
+            },
+            {
+              "date": "2026-11-18",
+              "basket_net_pct": -1.835,
+              "spy_pct": -3.204,
+              "excess_pct": 1.369
             }
           ]
         },
@@ -564,6 +551,12 @@
               "basket_net_pct": 0.149,
               "spy_pct": -1.015,
               "excess_pct": 1.164
+            },
+            {
+              "date": "2026-11-18",
+              "basket_net_pct": 0.767,
+              "spy_pct": -1.318,
+              "excess_pct": 2.085
             }
           ]
         },
@@ -574,6 +567,25 @@
           "marks": [
             {
               "date": "2026-11-17",
+              "basket_net_pct": -0.1,
+              "spy_pct": 0.0,
+              "excess_pct": -0.1
+            },
+            {
+              "date": "2026-11-18",
+              "basket_net_pct": -0.994,
+              "spy_pct": -0.306,
+              "excess_pct": -0.688
+            }
+          ]
+        },
+        {
+          "signal_date": "2026-11-17",
+          "strategy_id": "momentum-5-20-liquidity-v1",
+          "complete": false,
+          "marks": [
+            {
+              "date": "2026-11-18",
               "basket_net_pct": -0.1,
               "spy_pct": 0.0,
               "excess_pct": -0.1
